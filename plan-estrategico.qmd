@@ -1,0 +1,62 @@
+# Planteamiento Estratégico
+
+## Introducción
+En la actualidad, muchos ejecutivos del sector salud, impulsados por la necesidad de comprender y aprovechar la inteligencia artificial, se esfuerzan por familiarizarse con las promesas de esta tecnología. Viajan a centros tecnológicos y participan en conferencias para descubrir cómo la IA puede optimizar procesos clínicos y administrativos, con el objetivo de mejorar la atención al paciente y fortalecer la competitividad en un mercado cada vez más digital. Sin embargo, es un error creer que una simple estrategia para IA será suficiente. La verdadera transformación radica en desarrollar estrategias que no solo consideren la IA, sino que la integren profundamente en la toma de decisiones clínicas y operativas.
+
+### Estrategia para IA vs. Estrategia con IA
+
+Aquí es donde surge la diferencia entre una estrategia **para** IA y una estrategia **con** IA. Una estrategia para IA se refiere a cómo una organización se prepara para implementar la IA. Esto incluye la inversión en tecnologías de IA, la capacitación del personal, la adquisición de datos, y el diseño de procesos que permitan a la IA integrarse en el flujo de trabajo.
+
+Por otro lado, una estrategia con IA se refiere a cómo una organización utiliza la IA para lograr sus objetivos estratégicos más amplios. Aquí la IA no es solo una herramienta adicional; se convierte en un componente integral del proceso de toma de decisiones y ejecución de la estrategia de la organización.
+
+Consideremos un hospital que busca mejorar los resultados clínicos y la experiencia del paciente. Una estrategia para IA podría implicar la adquisición de sistemas de IA para la interpretación de imágenes médicas, la capacitación de los radiólogos en el uso de estos sistemas, y la integración de estos resultados en el expediente clínico electrónico.
+
+Sin embargo, una estrategia con IA iría más allá, integrando la IA en la estrategia operativa del hospital para optimizar el flujo de pacientes en la sala de urgencias, reduciendo los tiempos de espera y mejorando la satisfacción del paciente. Aquí, la IA no solo se usa como una herramienta, sino que se convierte en una parte integral de cómo el hospital opera y cumple sus objetivos estratégicos, como mejorar la calidad de la atención y la eficiencia operativa.
+
+### El Papel de los KPIs
+
+En el sector salud, la estrategia debe entenderse como la forma en que las organizaciones gestionan y priorizan su cartera de Indicadores Clave de Rendimiento (KPIs). Estos pueden incluir la tasa de mortalidad, la tasa de readmisiones, la satisfacción del paciente, entre otros. No se trata simplemente de optimizar KPIs individuales, sino de comprender cómo interactúan y se afectan mutuamente.
+
+Por ejemplo, maximizar la eficiencia en las intervenciones quirúrgicas no puede hacerse a expensas de la calidad de la atención postoperatoria. Los modelos de IA pueden ayudar a los hospitales a lograr un equilibrio óptimo entre estos KPIs, asegurando que, por ejemplo, las intervenciones para reducir los costos no disminuyan la calidad de la atención. Sin embargo, es fundamental que los líderes del sector salud mantengan una supervisión constante, asegurándose de que las decisiones impulsadas por la IA estén alineadas con los valores y objetivos éticos de la organización.
+
+### El Papel Esencial de los Datos
+
+No existe una estrategia efectiva para la IA sin una estrategia sólida para los datos. La calidad, volumen y velocidad de los datos son cruciales para entrenar modelos de IA que puedan, por ejemplo, predecir brotes de enfermedades o personalizar planes de tratamiento para pacientes crónicos. Los hospitales y sistemas de salud deben invertir en gobernanza de datos, asegurando que los datos recopilados sean precisos, completos y se utilicen de manera efectiva para mejorar la atención.
+
+Desafortunadamente, muchos sistemas de salud todavía no han alineado sus estrategias de datos con sus iniciativas de IA. Aunque se reconoce que la IA es fundamental para la transformación digital en salud, pocos sistemas han implementado estrategias de gobernanza de datos robustas. Esta desconexión limita el potencial de la IA para mejorar la atención al paciente y optimizar los procesos operativos.
+
+### Un Medio para un Fin
+
+Al igual que las innovaciones pasadas en el sector salud, como la introducción de antibióticos o las vacunas, la IA tiene el potencial de transformar profundamente la manera en que se presta atención médica. Sin embargo, la IA debe verse como un medio para alcanzar fines específicos, como mejorar los resultados de los pacientes, reducir costos y aumentar la eficiencia operativa.
+
+## Planeacion del proyecto
+
+### ¿Cómo inicio?
+
+Para comenzar a planear un proyecto de inteligencia artificial, podemos seguir un enfoque basado en las cuatro fases fundamentales delineadas por Gartner:
+
+**Establecer la Visión del Proyecto de IA**
+
+Definir claramente cómo el proyecto de IA para la clasificación de neumonías contribuirá a los objetivos generales de la organización. Es crucial establecer desde el inicio cuál es el impacto esperado en términos de precisión diagnóstica, eficiencia en el flujo de trabajo clínico y mejora de los resultados para los pacientes.
+
+“*Nuestro proyecto de IA se enfoca en implementar un sistema de clasificación automatizada de neumonías, con el objetivo de reducir el tiempo de diagnóstico en un 50% y mejorar la precisión diagnóstica en un 20%, en comparación con las evaluaciones manuales, utilizando redes neuronales convolucionales (CNN) entrenadas con imágenes de rayos X de tórax.*”
+
+**Identificar Barreras Organizacionales y Soluciones**
+
+Identificar y eliminar las barreras que podrían impedir el éxito del proyecto. Esto puede incluir desafíos tecnológicos, falta de habilidades en el equipo, resistencia al cambio, o cuestiones regulatorias.
+
+“*Una de las barreras que enfrentaremos es la integración del modelo de IA en los flujos de trabajo clínicos existentes. Para superarlo, desarrollaremos un piloto inicial en colaboración con un grupo reducido de radiólogos y técnicos de TI, que nos permitirá iterar sobre el modelo y su implementación, asegurando que se ajuste a las necesidades clínicas y cumpla con las normativas vigentes.*”
+
+**Evaluar y Mitigar Riesgos**
+
+Evaluar los riesgos asociados al proyecto, incluyendo los regulatorios, reputacionales, tecnológicos y relacionados con la competencia. Definir acciones para mitigar estos riesgos.
+
+
+“*Para mitigar el riesgo de sesgos en nuestro modelo de clasificación, implementaremos un proceso de revisión continua, donde se analizarán los resultados del modelo en subgrupos de pacientes diferenciados por edad, sexo y comorbilidades. Además, trabajaremos con expertos en ética y regulaciones para garantizar que el sistema cumpla con las normas de equidad y no discriminación.*”
+
+**Priorizar Iniciativas Viables y de Alto Valor**
+
+Determinar qué iniciativas de IA son tanto valiosas como factibles, y priorizarlas en función de su alineación con los objetivos del negocio, la viabilidad técnica y la capacidad organizacional para llevarlas a cabo.
+
+
+“*El desarrollo del clasificador de neumonías será la prioridad inicial dentro de nuestro portafolio de proyectos de IA, dado su alto potencial para mejorar la precisión diagnóstica y optimizar el tiempo de respuesta en urgencias. Este proyecto será evaluado periódicamente para asegurar que se mantenga alineado con los objetivos clínicos y de negocio de nuestra institución.*”
