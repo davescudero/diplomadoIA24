@@ -1,13 +1,54 @@
-# Preface {.unnumbered}
+# Temario y referencias {-}
 
-La integración de la inteligencia artificial (IA) en la medicina está transformando la manera en que abordamos el diagnóstico y tratamiento de enfermedades. En particular, los avances en la clasificación de imágenes médicas han permitido una mayor precisión y rapidez en la identificación de patologías, mejorando los resultados clínicos y optimizando el uso de recursos en los sistemas de salud. Sin embargo, el éxito de un proyecto de IA en salud no depende únicamente de la sofisticación de los algoritmos utilizados; requiere una planificación estratégica cuidadosa, una colaboración interdisciplinaria efectiva y una implementación meticulosa.
+**Todo el material y las notas de este modulo estarán disponibles en este** [repositorio](https://github.com/davescudero/diplomadoIA24).
 
-En esta primera parte del modulo, nos enfocaremos en los aspectos fundamentales para el planteamiento y desarrollo de un proyecto de IA en salud, utilizando como ejemplo un clasificador de neumonías mediante técnicas de aprendizaje profundo. Comenzaremos con la **Definición del Problema** clínico, identificando los objetivos específicos que guiarán nuestro proyecto. Este paso es crucial, ya que establece el marco sobre el cual se construirá todo el desarrollo posterior, asegurando que el proyecto esté alineado con las necesidades clínicas reales.
+- **Planteamiento estratégico y presentación de proyectos de IA en salud**
+  - Introducción a la inteligencia artificial en salud
+  - Importancia de la planificación estratégica en proyectos de IA
+  - Ejemplo práctico: Clasificación de neumonías con deep learning
+  - Herramientas para la presentación de proyectos
 
-A continuación, exploraremos la **Estrategia del Proyecto**, abordando tanto las consideraciones técnicas como éticas y legales que son esenciales para el éxito y la aceptación del proyecto. La ética en IA no es una mera formalidad; es un pilar que sostiene la confianza en los sistemas desarrollados y su aplicación segura en contextos clínicos.
+- **Colaboración interdisciplinaria en proyectos de IA**
+  - Roles y competencias en equipos de IA
+  - Estrategias para la colaboración interdisciplinaria
+  - Desafíos y soluciones en la implementación de proyectos de IA en salud
 
-Finalmente, cerraremos esta sección con un enfoque práctico en la **Presentación del Proyecto**. Aquí, discutiremos cómo estructurar un pitch efectivo, que no solo comunique la importancia del proyecto, sino que también inspire confianza en su viabilidad técnica y clínica. Presentaremos un ejemplo de pitch para el proyecto de clasificación de neumonías, que servirá como guía para la preparación de presentaciones en otros proyectos de IA.
+- **Implementación y seguimiento de proyectos de IA**
+  - Gestión de proyectos en el contexto de salud
+  - Mantenimiento y monitoreo de modelos de IA
+  - Ética y regulación en la inteligencia artificial aplicada a la salud
 
-Los siguientes capítulos ampliarán el tema con un enfoque en la **Colaboración Interdisciplinaria** y la **Implementación y Seguimiento del Proyecto**. Estas secciones son vitales, ya que un proyecto de IA en salud es, por naturaleza, un esfuerzo colectivo que depende del conocimiento y la expertise de diversos especialistas, y de una implementación técnica que garantice su sostenibilidad a largo plazo.
+- **Obtención, análisis y preparación de datos**
+  - Fuentes de datos en el sector salud
+  - Procesamiento y limpieza de datos
+  - Técnicas avanzadas de preparación de datos para IA
 
-Al seguir el desarrollo de este proyecto, los lectores no solo adquirirán conocimientos téoricos, sino que también entenderán cómo integrar estos conocimientos en un entorno real de salud, llevando una idea desde su concepción estratégica hasta su implementación práctica con un impacto significativo en la atención al paciente.
+- **Evaluación y optimización de modelos de IA**
+  - Métricas de evaluación de modelos en salud
+  - Optimización de modelos: Técnicas y herramientas
+  - Consideraciones sobre sesgos y limitaciones en modelos de IA
+
+- **Sesgos y limitaciones en la inteligencia artificial**
+  - Identificación de sesgos en datos y modelos
+  - Impacto de los sesgos en los resultados clínicos
+  - Estrategias para mitigar sesgos en IA
+
+### Material {-}
+
+El material del curso, incluyendo ejemplos, referencias  y ejercicios, estará disponible en [este repositorio](https://github.com/davescudero/diplomadoIA24).
+
+### Referencias principales {-}
+
+- [Artificial Intelligence in Healthcare](https://link.springer.com/book/10.1007/978-3-030-32150-5), @chang2019artificial
+- [Machine Learning for Healthcare](https://www.elsevier.com/books/machine-learning-for-healthcare/9780128188067), @aggarwal2020machine
+- [Deep Learning](https://www.deeplearningbook.org/), @goodfellow2016
+
+### Otras referencias {-}
+
+- [Data Science for Medical Imaging](https://link.springer.com/book/10.1007/978-3-030-13969-8), @de2019data
+- [The Elements of Statistical Learning](https://web.stanford.edu/~hastie/ElemStatLearn/), @ESL
+- [Introduction to Machine Learning with Python](https://www.oreilly.com/library/view/introduction-to-machine/9781449369880/), @muller2016introduction
+
+### Software {-}
+
+Para las tareas y proyectos pueden usar cualquier lenguaje o flujo de trabajo que prefieran (R, Python, etc.), siempre y cuando el trabajo esté basado en código y no en point-and-click. Se recomienda el uso de librerías especializadas y multiplataforma (como PyTorch, TensorFlow, o Scikit-learn).
