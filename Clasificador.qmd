@@ -1,0 +1,213 @@
+# Clasificador de Neumonias con Deep Learning
+
+Entrenaremos un clasificador para predecir si una radiografía de un paciente muestra signos de neumonía o no, basado en el [Desafío de Detección de Neumonía de la RSNA](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge)
+
+## Obtención de Datos
+
+En el artículo de Wang et al. [@Wang2017], se presenta la base de datos ChestX-ray8, que incluye benchmarks para la clasificación y localización de enfermedades torácicas comunes.
+
+Primero, descargamos los datos de [Kaggle](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/data)
+
+Fuente Original: https://nihcc.app.box.com/v/ChestXray-NIHCC
+
+1. **Escala del Dataset:**
+- El **ChestX-ray8** es una base de datos masiva que contiene **108,948 imágenes de rayos X** en vista frontal de **32,717 pacientes únicos**. Estas imágenes fueron recolectadas de sistemas de archivado y comunicación de imágenes (PACS) de un hospital, y abarcan un período desde **1992 hasta 2015**.
+- Cada imagen está etiquetada con una o múltiples de **ocho enfermedades comunes del tórax** (Atelectasia, Cardiomegalia, Derrame, Infiltración, Masa, Nódulo, Neumonía y Neumotórax).
+
+2. **Etiquetado mediante Procesamiento de Lenguaje Natural (NLP):**
+- Las etiquetas de las enfermedades se extrajeron automáticamente de los informes radiológicos asociados a cada imagen usando técnicas de NLP. Esto permitió generar etiquetas débilmente supervisadas, es decir, etiquetas a nivel de imagen sin la necesidad de anotación manual exhaustiva, lo que sería impracticable a esta escala.
+- Herramientas de NLP como **DNorm** y **MetaMap** fueron usadas para identificar y normalizar los conceptos de enfermedades a partir de los informes. También se desarrollaron reglas personalizadas para manejar la **negación** e **incertidumbre** en las anotaciones.
+
+3. **Desafíos Técnicos:**
+- **Dimensiones de las Imágenes:** Las radiografías de tórax suelen tener dimensiones grandes (2000x3000 píxeles), lo que presenta desafíos tanto para el almacenamiento como para el procesamiento eficiente de las imágenes.
+- **Variabilidad en las Etiquetas:** Las enfermedades torácicas presentan una gran variabilidad en su apariencia y tamaño dentro de las imágenes, lo que dificulta la clasificación y localización precisas.
+
+4. **Procesamiento de Imágenes:**
+- Las imágenes fueron redimensionadas a 1024x1024 píxeles para facilitar el procesamiento computacional sin perder detalles significativos.
+- Se generaron **cuadros delimitadores (B-Boxes)** para un subconjunto de imágenes, permitiendo la evaluación de la localización de patologías, aunque el etiquetado denso y detallado a esta escala es inviable.
+
+### **Consideraciones**
+
+1. **Gran Volumen de Datos:**
+- Recolectar y procesar más de 100,000 imágenes radiológicas requiere una infraestructura robusta de almacenamiento y un sistema eficiente de manejo de datos. Esto incluye tanto hardware (servidores, GPUs) como software especializado para manejar grandes volúmenes de datos.
+
+2. **Automatización de Etiquetado:**
+- El etiquetado manual de datos a esta escala es impracticable, por lo que es crucial implementar técnicas avanzadas de procesamiento de lenguaje natural para extraer información relevante de los informes radiológicos. Esto también implica un esfuerzo significativo en la validación de las etiquetas generadas automáticamente para asegurar su precisión.
+
+3. **Gestión de la Calidad de los Datos:**
+- Implementar procedimientos rigurosos para asegurar la calidad de las etiquetas es fundamental, especialmente en entornos clínicos donde la precisión es crítica. Esto incluye la validación cruzada con datos anotados manualmente y la eliminación de etiquetas ruidosas o incorrectas.
+
+4. **Adaptación de Modelos de Deep Learning:**
+- Dado que los modelos preentrenados en conjuntos de datos generales como ImageNet no son directamente aplicables al dominio médico, se requiere ajustar y entrenar modelos de deep learning específicos para el análisis de imágenes médicas, lo que demanda grandes recursos computacionales y expertos en el campo.
+
+5. **Infraestructura Computacional:**
+- Se necesita una infraestructura computacional poderosa para manejar el entrenamiento de modelos con imágenes de alta resolución, lo que incluye el uso de múltiples GPUs y técnicas como la reducción del tamaño de los lotes de imágenes para manejar las limitaciones de memoria.
+
+6. **Consideraciones Éticas y de Privacidad:**
+- El manejo de datos médicos sensibles requiere estrictas medidas de seguridad y anonimización para cumplir con regulaciones de privacidad como HIPAA o GDPR, lo que añade una capa adicional de complejidad al manejo del dataset.
+
+## Preprocesamiento
+
+Este notebook realiza varias tareas críticas de preprocesamiento, este se refiere a una serie de pasos realizados para transformar las imágenes de rayos X originales y las etiquetas asociadas a un formato que pueda ser utilizado de manera eficiente por un modelo de inteligencia artificial (IA) o aprendizaje profundo. Estos pasos son fundamentales porque los datos *crudos*, tal como están, no siempre son ideales para ser introducidos directamente en un modelo.
+
+
+```{python}
+#| echo: false
+#| results: hide
+from pathlib import Path
+import pydicom
+import numpy as np
+import cv2
+import pandas as pd
+import matplotlib.pyplot as plt
+from tqdm.notebook import tqdm
+```
+
+### Exploración
+```{python}
+#| echo: false
+#| results: hide
+labels = pd.read_csv("/Users/davidescudero/Library/Mobile Documents/com~apple~CloudDocs/Documents/pydicom/AI-IN-MEDICAL-MATERIALS/Desafío detección neumonía RSNA/stage_2_train_labels.csv")
+labels.head(6)
+```
+
+Leemos el archivo CSV que contiene las etiquetas asociadas a las imágenes. Cada fila contiene un patientId, coordenadas para posibles consolidaciomes (si se detecta neumonía), y la variable `Target`, que indica si la imagen tiene o no signos de neumonía.
+
+El Target es binario (1 = neumonía, 0 = no neumonía). Esta es la variable objetivo que el modelo aprenderá a predecir.
+
+
+```{python}
+#| echo: false
+#| results: hide
+# Remove duplicate entries
+labels = labels.drop_duplicates("patientId")
+labels.head(6)
+```
+
+Se eliminan duplicados en las filas que contienen el mismo `patientId`. Esto es importante porque tener múltiples entradas para el mismo paciente podría causar problemas en el entrenamiento del modelo, como sesgo o sobreajuste.
+
+Cada paciente debe ser representado una única vez en el análisis, para evitar una ponderación excesiva de imágenes de un mismo paciente.
+
+```{python}
+#| echo: false
+labels['Target'].value_counts().plot(kind='bar', title='Distribución de etiquetas de neumonía')
+plt.show()
+```
+
+Visualizamos la distribución de las etiquetas para identificar cualquier desbalance en los datos. Un fuerte desbalance, como un número desproporcionado de imágenes sin neumonía, puede afectar el desempeño del modelo y requerir estrategias como submuestreo o sobrepeso en la clase minoritaria.
+
+Este gráfico ayuda a entender la prevalencia de neumonía en el conjunto de datos. Si el número de casos de neumonía es mucho menor, eso refleja un reto diagnóstico similar al del mundo real.
+
+```{python}
+#| echo: false
+#| results: hide
+ROOT_PATH = Path("/Users/davidescudero/Library/Mobile Documents/com~apple~CloudDocs/Documents/pydicom/AI-IN-MEDICAL-MATERIALS/Desafío detección neumonía RSNA/stage_2_train_images")
+SAVE_PATH = Path("Processed/")
+```
+
+```{python}
+#| echo: false
+fig, axis = plt.subplots(3, 3, figsize=(9, 9))
+c = 0
+for i in range(3):
+    for j in range(3):
+        patient_id = labels.patientId.iloc[c]
+        dcm_path = ROOT_PATH/patient_id
+        dcm_path = dcm_path.with_suffix(".dcm")
+        dcm = pydicom.read_file(dcm_path).pixel_array
+        
+        label = labels["Target"].iloc[c]
+        
+        axis[i][j].imshow(dcm, cmap="bone")
+        axis[i][j].set_title(label)
+        c+=1
+```
+
+Creamos una cuadrícula 3 x 3 para visualizar 9 imágenes. Esta técnica de visualización ayuda a explorar los datos visualmente, verificando si la calidad de las imágenes es adecuada para el entrenamiento de un modelo.
+
+
+### Preprocesamiento de Imagenes
+
+Para manejar eficientemente nuestros datos , convertimos las imágenes de rayos X almacenadas en formato DICOM a matrices.
+
+Posteriormente, calculamos la media y la desviación estándar general de los píxeles de todo el conjunto de datos con el propósito de normalización.
+
+Luego, las imágenes en matrices creadas se almacenan en dos carpetas separadas según su etiqueta binaria:
+* 0: Todas las radiografías que no muestran signos de neumonía
+* 1: Todas las radiografías que muestran signos de neumonía
+
+Estandarizamos todas las imágenes utilizando el valor máximo de píxel en el conjunto de datos proporcionado, 255. Todas las imágenes se redimensionan a 224x224.
+
+```{python}
+#| code-fold: true
+sums = 0  # Inicializa la variable para acumular la suma de los píxeles
+sums_squared = 0  # Inicializa la variable para acumular la suma de los cuadrados de los píxeles
+
+# Itera sobre el DataFrame de etiquetas, obteniendo el índice (c) y el ID del paciente (patient_id)
+for c, patient_id in enumerate(tqdm(labels.patientId)):  
+    # Crea la ruta completa al archivo DICOM correspondiente al paciente
+    dcm_path = ROOT_PATH/patient_id  
+    dcm_path = dcm_path.with_suffix(".dcm")  # Añade la extensión ".dcm" al archivo para que sea legible como DICOM
+    
+    # Lee el archivo DICOM usando pydicom y normaliza los valores de los píxeles dividiendo entre 255
+    dcm = pydicom.read_file(dcm_path).pixel_array / 255  
+    
+    # Redimensiona la imagen, ya que 1024x1024 es demasiado grande para manejar en modelos de Deep Learning.
+    # Cambiamos a una resolución de 224x224.
+    # Convertimos la imagen a tipo float16 para usar menos memoria al almacenar la imagen.
+    dcm_array = cv2.resize(dcm, (224, 224)).astype(np.float16)
+    
+    # Recupera la etiqueta correspondiente a la imagen del paciente (0 para sano, 1 para neumonía)
+    label = labels.Target.iloc[c]
+    
+    # Divide el conjunto de datos en 4/5 para entrenamiento y 1/5 para validación
+    train_or_val = "train" if c < 24000 else "val"  
+    
+    # Define la ruta de guardado y crea las carpetas necesarias si no existen
+    current_save_path = SAVE_PATH/train_or_val/str(label)  
+    current_save_path.mkdir(parents=True, exist_ok=True)
+    
+    # Guarda el array de la imagen en el directorio correspondiente (train/val y clase 0 o 1)
+    np.save(current_save_path/patient_id, dcm_array)  
+    
+    # Normaliza la suma de los píxeles dividiendo por el número total de píxeles en la imagen (224x224)
+    normalizer = dcm_array.shape[0] * dcm_array.shape[1]  
+    
+    # Solo calcula estadísticas de las imágenes de entrenamiento (no para validación)
+    if train_or_val == "train":  
+        # Suma los valores de los píxeles normalizados de cada imagen para calcular la media posteriormente
+        sums += np.sum(dcm_array) / normalizer  
+        
+        # Suma los cuadrados de los píxeles normalizados de cada imagen para calcular la desviación estándar posteriormente
+        sums_squared += (np.power(dcm_array, 2).sum()) / normalizer  
+```
+
+#### Calcular Media y Desviación Estándar del Dataset
+
+Para calcular la media y la desviación estándar del conjunto de datos, calculamos la suma de los valores de los píxeles, así como la suma de los valores de píxeles al cuadrado para cada sujeto. Esto permite calcular la media y la desviación estándar general sin mantener todo el conjunto de datos en memoria.
+
+```{python}
+#| code-fold: true
+mean = sums / 24000
+std = np.sqrt(sums_squared / 24000 - (mean**2))
+
+print(f"Mean of Dataset: {mean}, STD: {std}")
+```
+
+**Media**
+
+$\mu = \frac{\text{sums}}{24000}$
+
+Donde `sums` es la suma acumulada de los valores de píxeles de todas las imágenes de entrenamiento, y `24000` es el número total de imágenes en el conjunto de entrenamiento.
+
+**Desviación Estándar**
+$\sigma = \sqrt{\frac{\text{sums_squared}}{24000} - \mu^2}$
+
+Donde:
+- `sums_squared` es la suma acumulada de los cuadrados de los valores de los píxeles.
+- `mean**2` es el cuadrado de la media que ya se ha calculado.
+
+
+La normalización es importante para asegurarse de que los valores de los píxeles estén en un rango que permita a las redes neuronales converger más rápido y con mayor precisión. Al normalizar, centramos los valores en torno a la media (0.49) y escalamos con la desviación estándar.
+
+Este paso asegura que las variaciones en brillo o contraste no afecten el rendimiento del modelo de manera injustificada, permitiendo que la red neuronal se concentre en las características importantes para el diagnóstico, como las consolidaciones pulmonares.

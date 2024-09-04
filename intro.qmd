@@ -1,30 +1,19 @@
 # Introducción
 
 
-## Contexto
+> *IBM debería dejar de intentar curar el cáncer. Liberaron el motor de marketing sin controlar cómo construir y desarrollar un producto.* Peter Greulich
 
->*IBM debería dejar de intentar curar el cáncer. Liberaron el motor de marketing sin controlar cómo construir y desarrollar un producto.* Peter Greulich
+Se ha estudiado que las redes neuronales convolucionales (CNN) pueden actuar como una "segunda opinión", detectando patrones sutiles en imágenes médicas y mejorando la precisión diagnóstica. Este proyecto examina cómo las CNN pueden integrarse en el proceso de identificación de la neumonía, especialmente en situaciones donde la precisión es crítica.
 
-Imagina a un médico en su servicio social, enfrentado al reto de diagnosticar rápidamente a un paciente con dificultad respiratoria. Aunque la neumonía es un diagnóstico común, su identificación en situaciones de alta presión puede ser compleja, especialmente cuando cada minuto cuenta. La neumonía, una infección pulmonar que afecta a millones de personas en todo el mundo, y su detección temprana es esencial para prevenir complicaciones graves. Tradicionalmente, los radiólogos han sido los expertos encargados de interpretar las radiografías de tórax, pero la subjetividad inherente a la interpretación humana y la variabilidad en las lecturas pueden derivar en diagnósticos tardíos o imprecisos.
-
-Aquí es donde la inteligencia artificial (IA) encuentra su lugar como una herramienta adicional en el arsenal del diagnóstico médico. Las redes neuronales convolucionales (CNN), en particular, tienen el potencial de ofrecer una segunda opinión que, gracias a su capacidad para analizar grandes volúmenes de datos y detectar patrones sutiles, puede ayudar a mejorar la precisión diagnóstica. En este proyecto, examinaremos cómo las CNN pueden ser integradas para identificar la neumonía en radiografías de tórax, proporcionando a los médicos una herramienta adicional que puede aumentar la confiabilidad de sus diagnósticos, especialmente en contextos donde el margen de error debe ser mínimo.
-
-El enfoque no está en prometer una revolución en la medicina, sino en cómo estas tecnologías pueden apoyar el trabajo diario de los profesionales de la salud, ayudando a reducir la carga cognitiva y a minimizar el riesgo de errores en el diagnóstico. La IA, utilizada de manera apropiada, puede convertirse en un aliado que refuerza la toma de decisiones clínicas, brindando un respaldo adicional que, en última instancia, beneficia al paciente.
-
+El objetivo de este enfoque es apoyar la labor clínica diaria. Al reducir la carga cognitiva y disminuir el riesgo de errores diagnósticos, la IA puede ser una herramienta valiosa en la toma de decisiones clínicas. Utilizada adecuadamente, se convierte en un aliado, proporcionando respaldo adicional que beneficia directamente al paciente.
 
 ## Objetivos del Proyecto
 
-Este proyecto tiene una misión clara: desarrollar una herramienta que no solo sea tecnológicamente avanzada, sino también clínicamente relevante. El objetivo es construir un sistema de IA que ayude a los médicos en su toma de decisiones, aportando una segunda opinión basada en datos que pueda confirmar o cuestionar un diagnóstico inicial.
+**Desarrollo de un Modelo de Clasificación:** En las entrañas de este proyecto se encuentra el desarrollo de un modelo de deep learning capaz de discernir entre una radiografía normal y una afectada por neumonía. Con cada imagen procesada, el sistema podría aprender, mejorar y adaptarse, buscando alcanzar un nivel de precisión aceptable.
 
-**Desarrollo de un Modelo de Clasificación:** En las entrañas de este proyecto se encuentra el desarrollo de un modelo de deep learning capaz de discernir entre una radiografía normal y una afectada por neumonía. Con cada imagen procesada, el sistema aprende, mejora y se adapta, buscando alcanzar un nivel de precisión aceptable.
+**Evaluación de Desempeño:** Pero construir un modelo no es suficiente. Necesitamos asegurarnos de que este modelo funcione en el mundo real, donde las condiciones pueden ser mucho más caóticas que en un entorno de laboratorio. Por ello, el desempeño del sistema se evaluara utilizando métricas clave, sin embrago se tendría que comparar con la interpretación humana para asegurarnos de que sea una herramienta útil y fiable.
 
-**Evaluación de Desempeño:** Pero construir un modelo no es suficiente. Necesitamos asegurarnos de que este modelo funcione en el mundo real, donde las condiciones pueden ser mucho más caóticas que en un entorno de laboratorio. Por ello, evaluaremos el desempeño del sistema utilizando métricas clave, y lo compararemos con la interpretación humana para asegurarnos de que sea una herramienta útil y fiable.
+**Implementación Clínica:** Imagina un futuro cercano donde este modelo no sea solo un concepto en un laboratorio, sino una herramienta de uso diario en hospitales y clínicas. Aprenderemos estrategias para integrar el sistema en la práctica clínica, garantizando que sea fácil de usar y accesible para el personal médico.
 
-**Implementación Clínica:** Imagina un futuro cercano donde este modelo no sea solo un concepto en un laboratorio, sino una herramienta de uso diario en hospitales y clínicas. Diseñaremos estrategias para integrar el sistema en la práctica clínica, garantizando que sea fácil de usar y accesible para el personal médico.
+En la radiología, la IA está comenzando a desempeñar un papel crucial, ayudando a los médicos a detectar anomalías con mayor precisión y a reducir la posibilidad de errores humanos.
 
-**Consideraciones Éticas y Legales:** Finalmente, en un mundo donde la privacidad de los datos y la ética en la IA están bajo escrutinio constante, abordaremos las cuestiones éticas y legales, asegurándonos de que el sistema respete la confidencialidad de los pacientes y cumpla con las regulaciones sanitarias .
-
-
-La inteligencia artificial no es solo una herramienta; es un cambio de paradigma en la medicina. Piensa en la IA como un nuevo colega en el equipo médico, uno que nunca se cansa, que no se distrae, y que puede revisar cientos de imágenes en el tiempo que a un humano le llevaría revisar unas pocas. En la radiología, la IA está comenzando a desempeñar un papel crucial, ayudando a los médicos a detectar anomalías con mayor precisión y a reducir la posibilidad de errores humanos.
-
-La implementación de IA en la detección de neumonía es un paso hacia un futuro donde el diagnóstico es más rápido, más preciso y más accesible para todos. No se trata solo de mejorar la eficiencia; se trata de salvar vidas. Al integrar estas tecnologías en la práctica clínica, no solo mejoramos los resultados para los pacientes, sino que también allanamos el camino para futuras innovaciones que seguirán revolucionando la medicina.

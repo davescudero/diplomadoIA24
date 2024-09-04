@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Modulo 5 - 2&nbsp; Planteamiento Estratégico</title>
+<title>Módulos 5 y 6 - 2&nbsp; Planteamiento Estratégico</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./plan-neumonia.html" rel="next">
+<link href="./colaboracion.html" rel="next">
 <link href="./intro.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -96,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Modulo 5</a> 
+      <a href="./">Módulos 5 y 6</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -126,20 +126,44 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./colaboracion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Colaboración Interdisciplinaria en Proyectos de IA</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Clasificador.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Clasificador de Neumonias con Deep Learning</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Entrenamiento.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Entrenamiento</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Interpretacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Visualize the decision of the classifier</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./plan-neumonia.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Plan de Proyecto para la Clasificación de Neumonías con Inteligencia Artificial</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Plan de Proyecto para la Clasificación de Neumonías con Inteligencia Artificial</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./presentacion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Presentación del Proyecto (<em>Pitch</em>)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Presentación del Proyecto (<em>Pitch</em>)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -158,16 +182,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción"><span class="header-section-number">2.1</span> Introducción</a>
+  <li><a href="#estrategia-para-ia-vs.-estrategia-con-ia" id="toc-estrategia-para-ia-vs.-estrategia-con-ia" class="nav-link active" data-scroll-target="#estrategia-para-ia-vs.-estrategia-con-ia"><span class="header-section-number">2.1</span> Estrategia para IA vs.&nbsp;Estrategia con IA</a>
   <ul class="collapse">
-  <li><a href="#estrategia-para-ia-vs.-estrategia-con-ia" id="toc-estrategia-para-ia-vs.-estrategia-con-ia" class="nav-link" data-scroll-target="#estrategia-para-ia-vs.-estrategia-con-ia"><span class="header-section-number">2.1.1</span> Estrategia para IA vs.&nbsp;Estrategia con IA</a></li>
-  <li><a href="#el-papel-de-los-kpis" id="toc-el-papel-de-los-kpis" class="nav-link" data-scroll-target="#el-papel-de-los-kpis"><span class="header-section-number">2.1.2</span> El Papel de los KPIs</a></li>
-  <li><a href="#el-papel-esencial-de-los-datos" id="toc-el-papel-esencial-de-los-datos" class="nav-link" data-scroll-target="#el-papel-esencial-de-los-datos"><span class="header-section-number">2.1.3</span> El Papel Esencial de los Datos</a></li>
-  <li><a href="#un-medio-para-un-fin" id="toc-un-medio-para-un-fin" class="nav-link" data-scroll-target="#un-medio-para-un-fin"><span class="header-section-number">2.1.4</span> Un Medio para un Fin</a></li>
+  <li><a href="#el-papel-de-los-kpis" id="toc-el-papel-de-los-kpis" class="nav-link" data-scroll-target="#el-papel-de-los-kpis"><span class="header-section-number">2.1.1</span> El Papel de los KPIs</a></li>
+  <li><a href="#el-papel-de-los-datos" id="toc-el-papel-de-los-datos" class="nav-link" data-scroll-target="#el-papel-de-los-datos"><span class="header-section-number">2.1.2</span> El Papel de los Datos</a></li>
   </ul></li>
-  <li><a href="#planeacion-del-proyecto" id="toc-planeacion-del-proyecto" class="nav-link" data-scroll-target="#planeacion-del-proyecto"><span class="header-section-number">2.2</span> Planeacion del proyecto</a>
+  <li><a href="#planeación-de-un-proyecto-de-ia" id="toc-planeación-de-un-proyecto-de-ia" class="nav-link" data-scroll-target="#planeación-de-un-proyecto-de-ia"><span class="header-section-number">2.2</span> Planeación de un proyecto de IA</a>
   <ul class="collapse">
-  <li><a href="#cómo-inicio" id="toc-cómo-inicio" class="nav-link" data-scroll-target="#cómo-inicio"><span class="header-section-number">2.2.1</span> ¿Cómo inicio?</a></li>
+  <li><a href="#design-thinking-en-healthcare" id="toc-design-thinking-en-healthcare" class="nav-link" data-scroll-target="#design-thinking-en-healthcare"><span class="header-section-number">2.2.1</span> <em>Design Thinking</em> en <em>Healthcare</em></a></li>
   </ul></li>
   </ul>
 </nav>
@@ -194,48 +216,58 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="introducción" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="introducción"><span class="header-section-number">2.1</span> Introducción</h2>
-<p>En la actualidad, muchos ejecutivos del sector salud, impulsados por la necesidad de comprender y aprovechar la inteligencia artificial, se esfuerzan por familiarizarse con las promesas de esta tecnología. Viajan a centros tecnológicos y participan en conferencias para descubrir cómo la IA puede optimizar procesos clínicos y administrativos, con el objetivo de mejorar la atención al paciente y fortalecer la competitividad en un mercado cada vez más digital. Sin embargo, es un error creer que una simple estrategia para IA será suficiente. La verdadera transformación radica en desarrollar estrategias que no solo consideren la IA, sino que la integren profundamente en la toma de decisiones clínicas y operativas.</p>
-<section id="estrategia-para-ia-vs.-estrategia-con-ia" class="level3" data-number="2.1.1">
-<h3 data-number="2.1.1" class="anchored" data-anchor-id="estrategia-para-ia-vs.-estrategia-con-ia"><span class="header-section-number">2.1.1</span> Estrategia para IA vs.&nbsp;Estrategia con IA</h3>
-<p>Aquí es donde surge la diferencia entre una estrategia <strong>para</strong> IA y una estrategia <strong>con</strong> IA. Una estrategia para IA se refiere a cómo una organización se prepara para implementar la IA. Esto incluye la inversión en tecnologías de IA, la capacitación del personal, la adquisición de datos, y el diseño de procesos que permitan a la IA integrarse en el flujo de trabajo.</p>
-<p>Por otro lado, una estrategia con IA se refiere a cómo una organización utiliza la IA para lograr sus objetivos estratégicos más amplios. Aquí la IA no es solo una herramienta adicional; se convierte en un componente integral del proceso de toma de decisiones y ejecución de la estrategia de la organización.</p>
-<p>Consideremos un hospital que busca mejorar los resultados clínicos y la experiencia del paciente. Una estrategia para IA podría implicar la adquisición de sistemas de IA para la interpretación de imágenes médicas, la capacitación de los radiólogos en el uso de estos sistemas, y la integración de estos resultados en el expediente clínico electrónico.</p>
-<p>Sin embargo, una estrategia con IA iría más allá, integrando la IA en la estrategia operativa del hospital para optimizar el flujo de pacientes en la sala de urgencias, reduciendo los tiempos de espera y mejorando la satisfacción del paciente. Aquí, la IA no solo se usa como una herramienta, sino que se convierte en una parte integral de cómo el hospital opera y cumple sus objetivos estratégicos, como mejorar la calidad de la atención y la eficiencia operativa.</p>
+<section id="estrategia-para-ia-vs.-estrategia-con-ia" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="estrategia-para-ia-vs.-estrategia-con-ia"><span class="header-section-number">2.1</span> Estrategia para IA vs.&nbsp;Estrategia con IA</h2>
+<p>Estrategia <strong>para</strong> IA: Preparación de una organización para implementar la IA. - Inversión en tecnologías de IA - Capacitación del personal - Adquisición de datos - Diseño de procesos que permitan a la IA integrarse en el flujo de trabajo.</p>
+<p>Estrategia <strong>con IA</strong>: Cómo se usa la IA para lograr sus objetivos estratégicos más amplios.</p>
+<section id="el-papel-de-los-kpis" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="el-papel-de-los-kpis"><span class="header-section-number">2.1.1</span> El Papel de los KPIs</h3>
+<ol type="1">
+<li><strong>Estrategia en el sector salud</strong>: El concepto de estrategia se refiere a cómo las organizaciones priorizan y gestionan múltiples indicadores clave de rendimiento (KPIs) al mismo tiempo.</li>
+<li><strong>Interacción entre KPIs</strong>: Los KPIs no funcionan de forma independiente; lo que se hace para optimizar uno puede afectar a otros. Es necesario gestionar estas interacciones para evitar que el énfasis en un área genere efectos negativos en otra.</li>
+<li><strong>IA como herramienta de equilibrio</strong>: Los modelos de inteligencia artificial (IA) pueden ayudar a identificar un punto de equilibrio entre varios KPIs, garantizando que se mantenga una calidad adecuada de atención mientras se gestionan otros aspectos como la eficiencia o los costos.</li>
+<li><strong>Supervisión y alineación ética</strong>: La implementación de IA debe ser supervisada por los líderes del sector salud para asegurarse de que las decisiones tecnológicas respeten los valores éticos y los objetivos generales de la organización.</li>
+</ol>
 </section>
-<section id="el-papel-de-los-kpis" class="level3" data-number="2.1.2">
-<h3 data-number="2.1.2" class="anchored" data-anchor-id="el-papel-de-los-kpis"><span class="header-section-number">2.1.2</span> El Papel de los KPIs</h3>
-<p>En el sector salud, la estrategia debe entenderse como la forma en que las organizaciones gestionan y priorizan su cartera de Indicadores Clave de Rendimiento (KPIs). Estos pueden incluir la tasa de mortalidad, la tasa de readmisiones, la satisfacción del paciente, entre otros. No se trata simplemente de optimizar KPIs individuales, sino de comprender cómo interactúan y se afectan mutuamente.</p>
-<p>Por ejemplo, maximizar la eficiencia en las intervenciones quirúrgicas no puede hacerse a expensas de la calidad de la atención postoperatoria. Los modelos de IA pueden ayudar a los hospitales a lograr un equilibrio óptimo entre estos KPIs, asegurando que, por ejemplo, las intervenciones para reducir los costos no disminuyan la calidad de la atención. Sin embargo, es fundamental que los líderes del sector salud mantengan una supervisión constante, asegurándose de que las decisiones impulsadas por la IA estén alineadas con los valores y objetivos éticos de la organización.</p>
-</section>
-<section id="el-papel-esencial-de-los-datos" class="level3" data-number="2.1.3">
-<h3 data-number="2.1.3" class="anchored" data-anchor-id="el-papel-esencial-de-los-datos"><span class="header-section-number">2.1.3</span> El Papel Esencial de los Datos</h3>
-<p>No existe una estrategia efectiva para la IA sin una estrategia sólida para los datos. La calidad, volumen y velocidad de los datos son cruciales para entrenar modelos de IA que puedan, por ejemplo, predecir brotes de enfermedades o personalizar planes de tratamiento para pacientes crónicos. Los hospitales y sistemas de salud deben invertir en gobernanza de datos, asegurando que los datos recopilados sean precisos, completos y se utilicen de manera efectiva para mejorar la atención.</p>
-<p>Desafortunadamente, muchos sistemas de salud todavía no han alineado sus estrategias de datos con sus iniciativas de IA. Aunque se reconoce que la IA es fundamental para la transformación digital en salud, pocos sistemas han implementado estrategias de gobernanza de datos robustas. Esta desconexión limita el potencial de la IA para mejorar la atención al paciente y optimizar los procesos operativos.</p>
-</section>
-<section id="un-medio-para-un-fin" class="level3" data-number="2.1.4">
-<h3 data-number="2.1.4" class="anchored" data-anchor-id="un-medio-para-un-fin"><span class="header-section-number">2.1.4</span> Un Medio para un Fin</h3>
-<p>Al igual que las innovaciones pasadas en el sector salud, como la introducción de antibióticos o las vacunas, la IA tiene el potencial de transformar profundamente la manera en que se presta atención médica. Sin embargo, la IA debe verse como un medio para alcanzar fines específicos, como mejorar los resultados de los pacientes, reducir costos y aumentar la eficiencia operativa.</p>
+<section id="el-papel-de-los-datos" class="level3" data-number="2.1.2">
+<h3 data-number="2.1.2" class="anchored" data-anchor-id="el-papel-de-los-datos"><span class="header-section-number">2.1.2</span> El Papel de los Datos</h3>
+<ol type="1">
+<li><strong>Relación entre estrategia de IA y estrategia de datos</strong>: Una estrategia de IA efectiva depende directamente de una estrategia sólida para los datos. La calidad, cantidad y velocidad de los datos son fundamentales para entrenar modelos de IA de manera adecuada.</li>
+<li><strong>Gobernanza de datos</strong>: Los hospitales y sistemas de salud deben invertir en una buena gobernanza de datos. Esto significa asegurarse de que los datos sean precisos, completos y se gestionen adecuadamente para su uso en mejorar la atención médica.</li>
+</ol>
 </section>
 </section>
-<section id="planeacion-del-proyecto" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="planeacion-del-proyecto"><span class="header-section-number">2.2</span> Planeacion del proyecto</h2>
-<section id="cómo-inicio" class="level3" data-number="2.2.1">
-<h3 data-number="2.2.1" class="anchored" data-anchor-id="cómo-inicio"><span class="header-section-number">2.2.1</span> ¿Cómo inicio?</h3>
+<section id="planeación-de-un-proyecto-de-ia" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="planeación-de-un-proyecto-de-ia"><span class="header-section-number">2.2</span> Planeación de un proyecto de IA</h2>
+<p><strong>¿Cómo inicio?</strong></p>
 <p>Para comenzar a planear un proyecto de inteligencia artificial, podemos seguir un enfoque basado en las cuatro fases fundamentales delineadas por Gartner:</p>
-<p><strong>Establecer la Visión del Proyecto de IA</strong></p>
-<p>Definir claramente cómo el proyecto de IA para la clasificación de neumonías contribuirá a los objetivos generales de la organización. Es crucial establecer desde el inicio cuál es el impacto esperado en términos de precisión diagnóstica, eficiencia en el flujo de trabajo clínico y mejora de los resultados para los pacientes.</p>
-<p>“<em>Nuestro proyecto de IA se enfoca en implementar un sistema de clasificación automatizada de neumonías, con el objetivo de reducir el tiempo de diagnóstico en un 50% y mejorar la precisión diagnóstica en un 20%, en comparación con las evaluaciones manuales, utilizando redes neuronales convolucionales (CNN) entrenadas con imágenes de rayos X de tórax.</em>”</p>
-<p><strong>Identificar Barreras Organizacionales y Soluciones</strong></p>
+<ol type="1">
+<li><strong>Establecer la Visión del Proyecto de IA</strong></li>
+</ol>
+<p>Definir claramente cómo el proyecto de IA contribuirá a los objetivos generales de la organización. Es crucial establecer desde el inicio cuál es el impacto esperado en términos de precisión diagnóstica, eficiencia en el flujo de trabajo clínico y mejora de los resultados para los pacientes.</p>
+<ol start="2" type="1">
+<li><strong>Identificar Barreras Organizacionales y Soluciones</strong></li>
+</ol>
 <p>Identificar y eliminar las barreras que podrían impedir el éxito del proyecto. Esto puede incluir desafíos tecnológicos, falta de habilidades en el equipo, resistencia al cambio, o cuestiones regulatorias.</p>
-<p>“<em>Una de las barreras que enfrentaremos es la integración del modelo de IA en los flujos de trabajo clínicos existentes. Para superarlo, desarrollaremos un piloto inicial en colaboración con un grupo reducido de radiólogos y técnicos de TI, que nos permitirá iterar sobre el modelo y su implementación, asegurando que se ajuste a las necesidades clínicas y cumpla con las normativas vigentes.</em>”</p>
-<p><strong>Evaluar y Mitigar Riesgos</strong></p>
+<ol start="3" type="1">
+<li><strong>Evaluar y Mitigar Riesgos</strong></li>
+</ol>
 <p>Evaluar los riesgos asociados al proyecto, incluyendo los regulatorios, reputacionales, tecnológicos y relacionados con la competencia. Definir acciones para mitigar estos riesgos.</p>
-<p>“<em>Para mitigar el riesgo de sesgos en nuestro modelo de clasificación, implementaremos un proceso de revisión continua, donde se analizarán los resultados del modelo en subgrupos de pacientes diferenciados por edad, sexo y comorbilidades. Además, trabajaremos con expertos en ética y regulaciones para garantizar que el sistema cumpla con las normas de equidad y no discriminación.</em>”</p>
-<p><strong>Priorizar Iniciativas Viables y de Alto Valor</strong></p>
+<ol start="4" type="1">
+<li><strong>Priorizar Iniciativas Viables y de Alto Valor</strong></li>
+</ol>
 <p>Determinar qué iniciativas de IA son tanto valiosas como factibles, y priorizarlas en función de su alineación con los objetivos del negocio, la viabilidad técnica y la capacidad organizacional para llevarlas a cabo.</p>
-<p>“<em>El desarrollo del clasificador de neumonías será la prioridad inicial dentro de nuestro portafolio de proyectos de IA, dado su alto potencial para mejorar la precisión diagnóstica y optimizar el tiempo de respuesta en urgencias. Este proyecto será evaluado periódicamente para asegurar que se mantenga alineado con los objetivos clínicos y de negocio de nuestra institución.</em>”</p>
+<section id="design-thinking-en-healthcare" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="design-thinking-en-healthcare"><span class="header-section-number">2.2.1</span> <em>Design Thinking</em> en <em>Healthcare</em></h3>
+<p><strong><em>Design Thinking</em></strong> es un enfoque centrado en el ser humano que resulta especialmente valioso en la planificación de proyectos de IA en el sector salud. Este enfoque facilita la creación de soluciones innovadoras que responden directamente a las necesidades de los pacientes y del personal clínico. En el contexto de un proyecto de IA, puedes seguir las siguientes etapas:</p>
+<ol type="1">
+<li><p><strong>Empatizar</strong>: Comprender profundamente las necesidades de los pacientes y los profesionales de la salud que estarán involucrados o beneficiados por el proyecto. Realiza entrevistas o estudios para identificar sus mayores problemas y oportunidades de mejora.</p></li>
+<li><p><strong>Definir</strong>: Con base en lo aprendido en la fase de empatía, define claramente los problemas clave que el proyecto de IA resolverá. En el contexto de la salud, esto puede significar la mejora en tiempos de diagnóstico, reducción de errores o personalización del tratamiento.</p></li>
+<li><p><strong>Idear</strong>: Generar ideas para abordar los problemas identificados. Aquí es útil involucrar a equipos multidisciplinarios, incluidos médicos, científicos, ingenieros y gestores de salud, para asegurar que las soluciones propuestas sean realistas y viables desde una perspectiva clínica y técnica.</p></li>
+<li><p><strong>Prototipar</strong>: Desarrollar prototipos rápidos que puedan ser probados en entornos reales o simulados. Esto permite iterar rápidamente y mejorar las soluciones antes de su implementación a gran escala.</p></li>
+<li><p><strong>Evaluar</strong>: Poner a prueba el prototipo con usuarios reales y obtener retroalimentación para afinar el proyecto. En el contexto de IA, esto podría implicar probar un modelo en un entorno clínico para asegurar que las recomendaciones sean útiles y precisas.</p></li>
+</ol>
+<p>Este enfoque de <strong>Design Thinking</strong> asegura que el proyecto de IA no solo esté alineado con los objetivos técnicos y organizacionales, sino también con las necesidades y expectativas de quienes interactúan con la solución, ya sean pacientes o profesionales de la salud.</p>
 
 
 </section>
@@ -658,8 +690,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./plan-neumonia.html" class="pagination-link" aria-label="Plan de Proyecto para la Clasificación de Neumonías con Inteligencia Artificial">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Plan de Proyecto para la Clasificación de Neumonías con Inteligencia Artificial</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./colaboracion.html" class="pagination-link" aria-label="Colaboración Interdisciplinaria en Proyectos de IA">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Colaboración Interdisciplinaria en Proyectos de IA</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
