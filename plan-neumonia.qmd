@@ -5,7 +5,6 @@
 
 El proyecto "Clasificación de Neumonías con IA" tiene como objetivo desarrollar e implementar una herramienta basada en inteligencia artificial que asista a los médicos en la identificación de neumonías a través de radiografías de tórax. Esta solución está diseñada para mejorar la precisión diagnóstica, reducir el tiempo de diagnóstico y optimizar el flujo de trabajo en entornos clínicos. Este documento detalla el plan de proyecto, que será utilizado por todos los colaboradores para garantizar una comprensión compartida de los objetivos, cronograma, roles y responsabilidades, y procesos de evaluación.
 
----
 
 ## **Definición del Problema**
 
@@ -19,8 +18,6 @@ La neumonía es una infección pulmonar común y potencialmente grave, con una a
 - **Reducir el Tiempo de Diagnóstico:** Implementar una solución que permita el análisis de imágenes en tiempo real o casi en tiempo real.
 - **Asegurar la Integración Clínica:** Diseñar el modelo para integrarse sin problemas en los flujos de trabajo clínicos existentes.
 - **Minimizar los Sesgos y Garantizar la Equidad:** Asegurar que el modelo funcione equitativamente en diferentes subgrupos de pacientes.
-
----
 
 ## **Estrategia del Proyecto**
 
@@ -73,7 +70,6 @@ La neumonía es una infección pulmonar común y potencialmente grave, con una a
   - Recoger feedback continuo del personal médico.
   - Realizar mejoras iterativas en el modelo y la interfaz según las necesidades clínicas.
 
----
 
 ## **Roadmap del Proyecto**
 
@@ -99,7 +95,6 @@ La neumonía es una infección pulmonar común y potencialmente grave, con una a
   - Expansión regional del sistema.
   - Evaluación del impacto clínico y optimización continua.
 
----
 
 ## **Equipo y Perfiles**
 
@@ -123,7 +118,7 @@ La neumonía es una infección pulmonar común y potencialmente grave, con una a
 - **Perfil:** Líder en ciencias de la computación o gestión tecnológica con experiencia en IA.
 - **Responsabilidades:** Evaluar la solución en el contexto de la estrategia organizacional, asegurar la alineación con los objetivos de la organización.
 
----
+
 
 ## **Presupuesto y Retorno de Inversión**
 
@@ -144,7 +139,6 @@ La neumonía es una infección pulmonar común y potencialmente grave, con una a
   - Ahorros estimados en costos hospitalarios: $1,000,000 en los primeros 3 años.
 - **Período de Recuperación:** 2-3 años
 
----
 
 ## **Evaluación y Mejora Continua**
 
@@ -165,10 +159,9 @@ La neumonía es una infección pulmonar común y potencialmente grave, con una a
 - **Monitoreo:** Sistema de monitoreo continuo para evaluar el rendimiento en tiempo real.
 - **Iteración:** Ciclos de mejora basados en datos nuevos y feedback clínico.
 
----
 
 ## **Consideraciones Finales**
 
-Este plan de proyecto está diseñado para guiar a todos los colaboradores a lo largo del desarrollo e implementación de la solución de IA para la clasificación de neumonías. La clave del éxito radica en la colaboración efectiva entre los diferentes roles y la adherencia a las fases y estrategias detalladas en este documento. Con un enfoque en la precisión, la eficiencia y la mejora continua, este proyecto tiene el potencial de transformar significativamente la forma en que se diagnostica y trata la neumonía en los entornos clínicos.
+
 
 Este *template* puede ser entregado a los colaboradores como una guía completa y detallada para la ejecución del proyecto, asegurando que todos los miembros del equipo comprendan sus responsabilidades y el cronograma general del proyecto.

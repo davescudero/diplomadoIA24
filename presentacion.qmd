@@ -25,7 +25,6 @@ Preparar un pitch efectivo para un proyecto de inteligencia artificial (IA), esp
    - **Confianza y Autoridad:** Mantén una postura abierta y segura. El contacto visual y los gestos naturales son cruciales para proyectar confianza y autoridad.
    - **Control del Ritmo:** Varía el ritmo de tu presentación para mantener la atención del público. Pausas estratégicas pueden ser usadas para enfatizar puntos clave y permitir que la audiencia procese la información.
 
----
 
 ## **Storytelling en Presentaciones**
 
@@ -40,7 +39,6 @@ Preparar un pitch efectivo para un proyecto de inteligencia artificial (IA), esp
    - **Personal Clínico:** Resalta la mejora en la calidad del cuidado al paciente, la reducción de la carga de trabajo, y cómo la herramienta de IA complementa su expertise clínico.
    - **Inversionistas:** Concéntrate en el potencial de mercado, la escalabilidad del proyecto, y el plan de monetización. Utiliza historias de éxito en la industria para ilustrar el crecimiento y la adopción de tecnologías similares.
 
----
 
 ## **Visualización de Datos**
 
@@ -58,7 +56,6 @@ Preparar un pitch efectivo para un proyecto de inteligencia artificial (IA), esp
    - **Consistencia de Formato:** Usa un formato consistente para todas las visualizaciones, asegurando que los colores, tamaños y estilos sean uniformes a lo largo de la presentación.
    - **Interactividad:** Si es posible, utiliza herramientas de visualización interactivas que permitan a la audiencia explorar los datos por sí mismos durante o después del pitch.
 
----
 
 ## **Enfoque Según los Stakeholders**
 
@@ -77,7 +74,6 @@ Preparar un pitch efectivo para un proyecto de inteligencia artificial (IA), esp
    - **Tip:** Enfatiza la viabilidad comercial y la demanda del mercado, respaldada por datos de la industria y casos de éxito.
    - **Visualización Clave:** Gráficos de proyección de crecimiento, mapas de expansión de mercado, análisis de competencia.
 
----
 
 ## ***Expertise* Requerido para un Pitch Efectivo**
 
@@ -93,7 +89,3 @@ Preparar un pitch efectivo para un proyecto de inteligencia artificial (IA), esp
    - **Descripción:** Presentar datos complejos de manera comprensible y atractiva requiere habilidades en herramientas de visualización y un entendimiento de cómo los datos pueden apoyar la narrativa.
    - **Recomendación:** Utiliza herramientas como Tableau, Power BI, o Python con librerías como Matplotlib y Seaborn para crear visualizaciones efectivas. Involucra a un analista de datos en el equipo para asegurar la calidad y precisión de las visualizaciones.
 
----
-
-
-## Ejemplo de pitch para el proyecto de clasificación de neumonías.
