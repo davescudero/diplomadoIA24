@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Módulos 5 y 6 - 9&nbsp; Presentación del Proyecto (Pitch)</title>
+<title>Módulos 5 y 6 - 7&nbsp; Evaluación e Implementación</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,8 +50,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
-<link href="./plan-neumonia.html" rel="prev">
+<link href="./plan-neumonia.html" rel="next">
+<link href="./Interpretacion.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./presentacion.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Presentación del Proyecto (<em>Pitch</em>)</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Evaluacion.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Evaluación e Implementación</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -150,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Evaluacion.html" class="sidebar-item-text sidebar-link">
+  <a href="./Evaluacion.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Evaluación e Implementación</span></span></a>
   </div>
 </li>
@@ -162,7 +182,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./presentacion.html" class="sidebar-item-text sidebar-link active">
+  <a href="./presentacion.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Presentación del Proyecto (<em>Pitch</em>)</span></span></a>
   </div>
 </li>
@@ -182,37 +202,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#cómo-preparar-un-pitch-efectivo" id="toc-cómo-preparar-un-pitch-efectivo" class="nav-link active" data-scroll-target="#cómo-preparar-un-pitch-efectivo"><span class="header-section-number">9.1</span> Cómo Preparar un Pitch Efectivo</a></li>
-  <li><a href="#presentación" id="toc-presentación" class="nav-link" data-scroll-target="#presentación"><span class="header-section-number">9.2</span> <strong>Presentación</strong></a>
+  <li><a href="#introducción-a-la-herramienta-optica" id="toc-introducción-a-la-herramienta-optica" class="nav-link active" data-scroll-target="#introducción-a-la-herramienta-optica"><span class="header-section-number">7.1</span> <strong>&nbsp;Introducción a la herramienta OPTICA</strong></a></li>
+  <li><a href="#implementación-del-proceso-de-evaluación" id="toc-implementación-del-proceso-de-evaluación" class="nav-link" data-scroll-target="#implementación-del-proceso-de-evaluación"><span class="header-section-number">7.2</span> <strong>Implementación del proceso de evaluación</strong></a>
   <ul class="collapse">
-  <li><a href="#estructura-clásica-del-pitch" id="toc-estructura-clásica-del-pitch" class="nav-link" data-scroll-target="#estructura-clásica-del-pitch"><span class="header-section-number">9.2.1</span> Estructura Clásica del Pitch</a></li>
-  <li><a href="#principios" id="toc-principios" class="nav-link" data-scroll-target="#principios"><span class="header-section-number">9.2.2</span> Principios</a></li>
-  <li><a href="#comunicación-no-verbal" id="toc-comunicación-no-verbal" class="nav-link" data-scroll-target="#comunicación-no-verbal"><span class="header-section-number">9.2.3</span> Comunicación No Verbal</a></li>
+  <li><a href="#estudio-de-caso" id="toc-estudio-de-caso" class="nav-link" data-scroll-target="#estudio-de-caso"><span class="header-section-number">7.2.1</span> <strong>Estudio de caso</strong></a></li>
   </ul></li>
-  <li><a href="#storytelling-en-presentaciones" id="toc-storytelling-en-presentaciones" class="nav-link" data-scroll-target="#storytelling-en-presentaciones"><span class="header-section-number">9.3</span> <strong>Storytelling en Presentaciones</strong></a>
+  <li><a href="#monitoreo-y-evaluación-continua" id="toc-monitoreo-y-evaluación-continua" class="nav-link" data-scroll-target="#monitoreo-y-evaluación-continua"><span class="header-section-number">7.3</span> <strong>Monitoreo y evaluación continua</strong></a>
   <ul class="collapse">
-  <li><a href="#elementos-de-storytelling" id="toc-elementos-de-storytelling" class="nav-link" data-scroll-target="#elementos-de-storytelling"><span class="header-section-number">9.3.1</span> Elementos de Storytelling</a></li>
-  <li><a href="#adaptación-del-storytelling-según-los-stakeholders" id="toc-adaptación-del-storytelling-según-los-stakeholders" class="nav-link" data-scroll-target="#adaptación-del-storytelling-según-los-stakeholders"><span class="header-section-number">9.3.2</span> Adaptación del Storytelling Según los Stakeholders</a></li>
+  <li><a href="#desafíos-y-consideraciones-éticas" id="toc-desafíos-y-consideraciones-éticas" class="nav-link" data-scroll-target="#desafíos-y-consideraciones-éticas"><span class="header-section-number">7.3.1</span> <strong>Desafíos y consideraciones éticas</strong></a></li>
   </ul></li>
-  <li><a href="#visualización-de-datos" id="toc-visualización-de-datos" class="nav-link" data-scroll-target="#visualización-de-datos"><span class="header-section-number">9.4</span> <strong>Visualización de Datos</strong></a>
-  <ul class="collapse">
-  <li><a href="#importancia-de-la-visualización-de-datos" id="toc-importancia-de-la-visualización-de-datos" class="nav-link" data-scroll-target="#importancia-de-la-visualización-de-datos"><span class="header-section-number">9.4.1</span> Importancia de la Visualización de Datos</a></li>
-  <li><a href="#herramientas-y-técnicas" id="toc-herramientas-y-técnicas" class="nav-link" data-scroll-target="#herramientas-y-técnicas"><span class="header-section-number">9.4.2</span> Herramientas y Técnicas</a></li>
-  <li><a href="#buenas-prácticas-en-la-visualización" id="toc-buenas-prácticas-en-la-visualización" class="nav-link" data-scroll-target="#buenas-prácticas-en-la-visualización"><span class="header-section-number">9.4.3</span> Buenas Prácticas en la Visualización</a></li>
-  </ul></li>
-  <li><a href="#enfoque-según-los-stakeholders" id="toc-enfoque-según-los-stakeholders" class="nav-link" data-scroll-target="#enfoque-según-los-stakeholders"><span class="header-section-number">9.5</span> <strong>Enfoque Según los Stakeholders</strong></a>
-  <ul class="collapse">
-  <li><a href="#directivos-y-tomadores-de-decisiones" id="toc-directivos-y-tomadores-de-decisiones" class="nav-link" data-scroll-target="#directivos-y-tomadores-de-decisiones"><span class="header-section-number">9.5.1</span> Directivos y Tomadores de Decisiones</a></li>
-  <li><a href="#personal-clínico" id="toc-personal-clínico" class="nav-link" data-scroll-target="#personal-clínico"><span class="header-section-number">9.5.2</span> Personal Clínico</a></li>
-  <li><a href="#inversionistas" id="toc-inversionistas" class="nav-link" data-scroll-target="#inversionistas"><span class="header-section-number">9.5.3</span> Inversionistas</a></li>
-  </ul></li>
-  <li><a href="#expertise-requerido-para-un-pitch-efectivo" id="toc-expertise-requerido-para-un-pitch-efectivo" class="nav-link" data-scroll-target="#expertise-requerido-para-un-pitch-efectivo"><span class="header-section-number">9.6</span> <strong><em>Expertise</em> Requerido para un Pitch Efectivo</strong></a>
-  <ul class="collapse">
-  <li><a href="#conocimiento-técnico" id="toc-conocimiento-técnico" class="nav-link" data-scroll-target="#conocimiento-técnico"><span class="header-section-number">9.6.1</span> Conocimiento Técnico</a></li>
-  <li><a href="#comunicación-y-storytelling" id="toc-comunicación-y-storytelling" class="nav-link" data-scroll-target="#comunicación-y-storytelling"><span class="header-section-number">9.6.2</span> Comunicación y Storytelling</a></li>
-  <li><a href="#visualización-de-datos-1" id="toc-visualización-de-datos-1" class="nav-link" data-scroll-target="#visualización-de-datos-1"><span class="header-section-number">9.6.3</span> Visualización de Datos</a></li>
-  </ul></li>
-  <li><a href="#ejemplo-de-pitch-para-el-proyecto-de-clasificación-de-neumonías." id="toc-ejemplo-de-pitch-para-el-proyecto-de-clasificación-de-neumonías." class="nav-link" data-scroll-target="#ejemplo-de-pitch-para-el-proyecto-de-clasificación-de-neumonías."><span class="header-section-number">9.7</span> Ejemplo de pitch para el proyecto de clasificación de neumonías.</a></li>
   </ul>
 </nav>
     </div>
@@ -221,7 +219,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Presentación del Proyecto (<em>Pitch</em>)</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Evaluación e Implementación</span></h1>
 </div>
 
 
@@ -238,144 +236,78 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="cómo-preparar-un-pitch-efectivo" class="level2" data-number="9.1">
-<h2 data-number="9.1" class="anchored" data-anchor-id="cómo-preparar-un-pitch-efectivo"><span class="header-section-number">9.1</span> Cómo Preparar un Pitch Efectivo</h2>
-<p>Preparar un pitch efectivo para un proyecto de inteligencia artificial (IA), especialmente en el ámbito de la salud, requiere un enfoque estratégico que combine teoría de presentación, técnicas de storytelling, visualización de datos, y una comprensión profunda de los diferentes stakeholders involucrados. A continuación, se desglosan los elementos clave para crear un pitch persuasivo y memorable.</p>
-</section>
-<section id="presentación" class="level2" data-number="9.2">
-<h2 data-number="9.2" class="anchored" data-anchor-id="presentación"><span class="header-section-number">9.2</span> <strong>Presentación</strong></h2>
-<section id="estructura-clásica-del-pitch" class="level3" data-number="9.2.1">
-<h3 data-number="9.2.1" class="anchored" data-anchor-id="estructura-clásica-del-pitch"><span class="header-section-number">9.2.1</span> Estructura Clásica del Pitch</h3>
+<section id="introducción-a-la-herramienta-optica" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="introducción-a-la-herramienta-optica"><span class="header-section-number">7.1</span> <strong>&nbsp;Introducción a la herramienta OPTICA</strong></h2>
+<p>Usaremos como ejemplo la herramienta OPTICA para la evaluación de IA en salud <span class="citation" data-cites="Dagan2024OPTICA">(<a href="references.html#ref-Dagan2024OPTICA" role="doc-biblioref">Dagan et al. 2024</a>)</span></p>
 <ul>
-<li><strong>Inicio Impactante:</strong> Captura la atención desde el primer momento. Puedes comenzar con una estadística sorprendente, una anécdota relevante, o una pregunta provocadora que invite a la reflexión.</li>
-<li><strong>Problema y Solución:</strong> Define claramente el problema clínico y presenta tu solución de IA como una respuesta directa y efectiva. Asegúrate de articular cómo tu solución aborda específicamente las necesidades críticas identificadas.</li>
-<li><strong>Evidencia y Datos:</strong> Respalda tus afirmaciones con datos sólidos y evidencia. Esto incluye resultados preliminares, estudios relevantes, y métricas clave que demuestren la efectividad y el impacto potencial de la solución.</li>
-<li><strong>Impacto:</strong> Explica el impacto esperado de tu solución en términos cuantificables, como mejoras en la precisión diagnóstica, reducción de costos, o aumento en la eficiencia operativa.</li>
-<li><strong>Llamado a la Acción:</strong> Cierra con un llamado a la acción claro, ya sea solicitando apoyo financiero, colaboración, o la aprobación para proceder a la siguiente fase del proyecto.</li>
+<li><p><strong>Descripción general:</strong><br>
+OPTICA (Organizational PerspecTIve Checklist for AI solutions adoption) es una herramienta desarrollada para evaluar soluciones de IA desde la perspectiva de organizaciones de salud. Se diseñó para abordar la creciente necesidad de marcos de evaluación prácticos, que tomen en cuenta las características únicas de cada entorno de salud.</p></li>
+<li><p><strong>Justificación de su uso:</strong><br>
+La rápida adopción de herramientas de IA en salud ha mostrado el potencial de mejorar la atención clínica, pero también ha revelado inconsistencias de rendimiento y la falta de adecuación de algunos modelos al ser implementados en diferentes contextos. OPTICA ofrece una evaluación específica al contexto organizacional, asegurando que cada solución esté alineada con las necesidades y recursos locales.</p></li>
+<li><p><strong>Estructura de OPTICA:</strong><br>
+La herramienta se organiza en 13 capítulos divididos en 4 dominios clave:</p>
+<ol type="1">
+<li><strong>Especificación de la necesidad clínica</strong></li>
+<li><strong>Exploración de los datos</strong></li>
+<li><strong>Evaluación del desarrollo y desempeño</strong></li>
+<li><strong>Plan de despliegue y monitoreo</strong> Cada capítulo contiene varios ítems que deben ser completados por actores específicos, asegurando un enfoque integral.</li>
+</ol></li>
 </ul>
 </section>
-<section id="principios" class="level3" data-number="9.2.2">
-<h3 data-number="9.2.2" class="anchored" data-anchor-id="principios"><span class="header-section-number">9.2.2</span> Principios</h3>
+<section id="implementación-del-proceso-de-evaluación" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="implementación-del-proceso-de-evaluación"><span class="header-section-number">7.2</span> <strong>Implementación del proceso de evaluación</strong></h2>
 <ul>
-<li><strong>Claridad:</strong> Evita la jerga técnica cuando no sea necesaria. Usa un lenguaje claro y accesible que todos los stakeholders puedan entender, independientemente de su nivel de conocimiento técnico.</li>
-<li><strong>Concisión:</strong> Mantén el pitch breve y al punto. Cada palabra debe tener un propósito claro, evitando desviaciones innecesarias.</li>
-<li><strong>Coherencia Visual:</strong> Utiliza una presentación visualmente coherente y profesional. La elección de colores, tipografía, y el diseño general debe reforzar tu mensaje, no distraer.</li>
-</ul>
-</section>
-<section id="comunicación-no-verbal" class="level3" data-number="9.2.3">
-<h3 data-number="9.2.3" class="anchored" data-anchor-id="comunicación-no-verbal"><span class="header-section-number">9.2.3</span> Comunicación No Verbal</h3>
+<li><strong>Elaboración del plan de evaluación:</strong><br>
+Para implementar OPTICA, las organizaciones deben primero designar a los actores clave que participarán en el proceso. Cada uno tendrá la responsabilidad de completar los ítems que les correspondan según su rol (ej. clínico experto, desarrollador de la solución, expertos en seguridad de datos, etc.).</li>
+<li><strong>Desglose de actores clave:</strong>
 <ul>
-<li><strong>Confianza y Autoridad:</strong> Mantén una postura abierta y segura. El contacto visual y los gestos naturales son cruciales para proyectar confianza y autoridad.</li>
-<li><strong>Control del Ritmo:</strong> Varía el ritmo de tu presentación para mantener la atención del público. Pausas estratégicas pueden ser usadas para enfatizar puntos clave y permitir que la audiencia procese la información.</li>
+<li><strong>Experto clínico:</strong> Lidera la evaluación clínica de la solución y su integración en el flujo de trabajo.</li>
+<li><strong>Desarrollador de la solución:</strong> Proporciona detalles sobre el modelo de IA, incluyendo métricas de rendimiento.</li>
+<li><strong>Equipo de datos:</strong> Evalúa la disponibilidad y compatibilidad de los datos locales.</li>
+<li><strong>Experto en MLOps:</strong> Se encarga de los aspectos técnicos del despliegue de la solución.</li>
+<li><strong>Líder de IA:</strong> Supervisa el proceso general y asegura la alineación con la estrategia organizacional.</li>
+</ul></li>
+<li><strong>Etapas del proceso de evaluación:</strong> OPTICA organiza el proceso en 7 etapas consecutivas, desde la identificación de la necesidad clínica hasta el monitoreo posterior a la implementación. Cada etapa asegura que se aborden todos los aspectos relevantes de la solución, y permite detener el proceso si se identifica una deficiencia crítica.</li>
 </ul>
-<hr>
+<section id="estudio-de-caso" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="estudio-de-caso"><span class="header-section-number">7.2.1</span> <strong>Estudio de caso</strong></h3>
+<p>El proceso de evaluación para este modelo incluirá los siguientes pasos: 1. Definir la necesidad clínica: ¿Cómo mejora este modelo el proceso actual de diagnóstico de neumonía? 2. Explorar los datos: ¿El conjunto de datos utilizado para entrenar el modelo es representativo de la población que será atendida en el hospital? 3. Evaluar el rendimiento: ¿Cuál es la precisión, sensibilidad y especificidad del modelo? ¿Existen riesgos de sesgos hacia subpoblaciones? 4. Plan de monitoreo: ¿Cómo se controlará el rendimiento del modelo una vez desplegado? - <strong>Discusión de resultados:</strong><br>
+Al finalizar el proceso de evaluación, analizaremos si el modelo cumple con los requisitos clínicos y técnicos establecidos. Esto incluye tanto los beneficios esperados (mejoras en la precisión del diagnóstico) como los riesgos potenciales (falta de representatividad en los datos o posibles sesgos).</p>
 </section>
 </section>
-<section id="storytelling-en-presentaciones" class="level2" data-number="9.3">
-<h2 data-number="9.3" class="anchored" data-anchor-id="storytelling-en-presentaciones"><span class="header-section-number">9.3</span> <strong>Storytelling en Presentaciones</strong></h2>
-<section id="elementos-de-storytelling" class="level3" data-number="9.3.1">
-<h3 data-number="9.3.1" class="anchored" data-anchor-id="elementos-de-storytelling"><span class="header-section-number">9.3.1</span> Elementos de Storytelling</h3>
+<section id="monitoreo-y-evaluación-continua" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="monitoreo-y-evaluación-continua"><span class="header-section-number">7.3</span> <strong>Monitoreo y evaluación continua</strong></h2>
 <ul>
-<li><strong>Narrativa Central:</strong> Construye una narrativa que conecte emocionalmente con la audiencia. Por ejemplo, comienza con una historia sobre un paciente que podría beneficiarse de la solución de IA, lo que humaniza el problema y resalta la importancia de tu proyecto.</li>
-<li><strong>Personajes y Conflicto:</strong> Introduce personajes relevantes, como el médico que enfrenta dificultades en el diagnóstico o el paciente que sufre complicaciones por un diagnóstico tardío. El conflicto debe girar en torno al problema que tu solución de IA resolverá.</li>
-<li><strong>Arco Narrativo:</strong> Desarrolla la historia siguiendo un arco narrativo clásico (inicio, desarrollo, clímax, y resolución) donde tu solución actúa como la herramienta clave para resolver el conflicto.</li>
-<li><strong>Cierre Impactante:</strong> Concluye la historia mostrando cómo el uso de la IA transforma la situación, ofreciendo un final positivo y una visión inspiradora del futuro.</li>
+<li><p><strong>Plan de monitoreo post-despliegue:</strong><br>
+Un aspecto crítico de la implementación de soluciones de IA es el monitoreo continuo. OPTICA sugiere la creación de planes específicos para reevaluar el rendimiento del modelo en función de las actualizaciones de los datos y las condiciones clínicas.</p></li>
+<li><p><strong>Indicadores clave de éxito:</strong><br>
+Estos indicadores deben ser definidos antes del despliegue e incluir métricas clínicas y de usabilidad. Por ejemplo, los tiempos de respuesta de los médicos, la precisión en entornos reales y la satisfacción del usuario final.</p></li>
 </ul>
-</section>
-<section id="adaptación-del-storytelling-según-los-stakeholders" class="level3" data-number="9.3.2">
-<h3 data-number="9.3.2" class="anchored" data-anchor-id="adaptación-del-storytelling-según-los-stakeholders"><span class="header-section-number">9.3.2</span> Adaptación del Storytelling Según los Stakeholders</h3>
+<section id="desafíos-y-consideraciones-éticas" class="level3" data-number="7.3.1">
+<h3 data-number="7.3.1" class="anchored" data-anchor-id="desafíos-y-consideraciones-éticas"><span class="header-section-number">7.3.1</span> <strong>Desafíos y consideraciones éticas</strong></h3>
 <ul>
-<li><strong>Directivos y Tomadores de Decisiones:</strong> Enfatiza los beneficios estratégicos y financieros. Muestra cómo la solución de IA se alinea con los objetivos de la organización y ofrece un retorno de inversión claro.</li>
-<li><strong>Personal Clínico:</strong> Resalta la mejora en la calidad del cuidado al paciente, la reducción de la carga de trabajo, y cómo la herramienta de IA complementa su expertise clínico.</li>
-<li><strong>Inversionistas:</strong> Concéntrate en el potencial de mercado, la escalabilidad del proyecto, y el plan de monetización. Utiliza historias de éxito en la industria para ilustrar el crecimiento y la adopción de tecnologías similares.</li>
+<li><strong>Riesgos asociados con la IA en salud:</strong><br>
+Las soluciones de IA pueden reproducir sesgos existentes en los datos, lo que puede generar disparidades en la atención. Además, los modelos pueden fallar al ser implementados en nuevas poblaciones, generando errores diagnósticos.</li>
+<li><strong>Aspectos legales y de privacidad:</strong><br>
+Los datos clínicos son altamente sensibles y deben manejarse con rigurosos estándares de privacidad y seguridad. El cumplimiento con las normativas locales y nacionales, como la protección de datos personales, es imprescindible para cualquier solución de IA.</li>
 </ul>
-<hr>
-</section>
-</section>
-<section id="visualización-de-datos" class="level2" data-number="9.4">
-<h2 data-number="9.4" class="anchored" data-anchor-id="visualización-de-datos"><span class="header-section-number">9.4</span> <strong>Visualización de Datos</strong></h2>
-<section id="importancia-de-la-visualización-de-datos" class="level3" data-number="9.4.1">
-<h3 data-number="9.4.1" class="anchored" data-anchor-id="importancia-de-la-visualización-de-datos"><span class="header-section-number">9.4.1</span> Importancia de la Visualización de Datos</h3>
+<section id="conclusiones" class="level4" data-number="7.3.1.1">
+<h4 data-number="7.3.1.1" class="anchored" data-anchor-id="conclusiones"><span class="header-section-number">7.3.1.1</span> <strong>7. Conclusiones</strong></h4>
 <ul>
-<li><strong>Claridad y Comprensión:</strong> Los datos visualizados correctamente pueden transformar cifras abstractas en conceptos comprensibles. Gráficos, diagramas y tablas bien diseñadas ayudan a la audiencia a captar rápidamente la magnitud del problema y la eficacia de la solución.</li>
-<li><strong>Narración a través de Datos:</strong> Los gráficos deben contar una historia. Un gráfico de tendencia que muestra una reducción en los tiempos de diagnóstico antes y después de la implementación de la IA, por ejemplo, cuenta una historia de éxito y mejora.</li>
+<li><strong>Reflexión final:</strong><br>
+La evaluación de las soluciones de IA es un proceso complejo y multidimensional. Requiere la participación de diferentes actores, la consideración de múltiples factores, y un monitoreo continuo para asegurar su éxito en la práctica clínica.</li>
+<li><strong>Próximos pasos:</strong><br>
+Los participantes deberán estar preparados para implementar herramientas como OPTICA en sus propios entornos laborales, adaptando el proceso de evaluación según las necesidades específicas de sus organizaciones.</li>
 </ul>
-</section>
-<section id="herramientas-y-técnicas" class="level3" data-number="9.4.2">
-<h3 data-number="9.4.2" class="anchored" data-anchor-id="herramientas-y-técnicas"><span class="header-section-number">9.4.2</span> Herramientas y Técnicas</h3>
-<ul>
-<li><strong>Gráficos de Barras y Líneas:</strong> Útiles para comparar datos antes y después de la implementación del proyecto, o para mostrar tendencias a lo largo del tiempo.</li>
-<li><strong>Infografías:</strong> Resumen visualmente los resultados clave y los pasos del proyecto, haciendo la información más accesible y atractiva.</li>
-<li><strong>Heatmaps y Diagramas de Flujo:</strong> Pueden mostrar patrones de diagnóstico y los flujos de trabajo mejorados, ilustrando cómo la solución se integra en el entorno clínico.</li>
-</ul>
-</section>
-<section id="buenas-prácticas-en-la-visualización" class="level3" data-number="9.4.3">
-<h3 data-number="9.4.3" class="anchored" data-anchor-id="buenas-prácticas-en-la-visualización"><span class="header-section-number">9.4.3</span> Buenas Prácticas en la Visualización</h3>
-<ul>
-<li><strong>Simplicidad:</strong> Evita el exceso de información en un solo gráfico. Cada visualización debe transmitir un mensaje claro sin sobrecargar a la audiencia con datos innecesarios.</li>
-<li><strong>Consistencia de Formato:</strong> Usa un formato consistente para todas las visualizaciones, asegurando que los colores, tamaños y estilos sean uniformes a lo largo de la presentación.</li>
-<li><strong>Interactividad:</strong> Si es posible, utiliza herramientas de visualización interactivas que permitan a la audiencia explorar los datos por sí mismos durante o después del pitch.</li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="enfoque-según-los-stakeholders" class="level2" data-number="9.5">
-<h2 data-number="9.5" class="anchored" data-anchor-id="enfoque-según-los-stakeholders"><span class="header-section-number">9.5</span> <strong>Enfoque Según los Stakeholders</strong></h2>
-<section id="directivos-y-tomadores-de-decisiones" class="level3" data-number="9.5.1">
-<h3 data-number="9.5.1" class="anchored" data-anchor-id="directivos-y-tomadores-de-decisiones"><span class="header-section-number">9.5.1</span> Directivos y Tomadores de Decisiones</h3>
-<ul>
-<li><strong>Foco:</strong> Retorno de Inversión (ROI), reducción de costos, alineación con la estrategia corporativa.</li>
-<li><strong>Tip:</strong> Utiliza métricas financieras y proyecciones de ahorro a largo plazo para justificar la inversión en el proyecto.</li>
-<li><strong>Visualización Clave:</strong> Gráficos de costos antes y después, diagramas de impacto financiero.</li>
-</ul>
-</section>
-<section id="personal-clínico" class="level3" data-number="9.5.2">
-<h3 data-number="9.5.2" class="anchored" data-anchor-id="personal-clínico"><span class="header-section-number">9.5.2</span> Personal Clínico</h3>
-<ul>
-<li><strong>Foco:</strong> Mejora de la precisión diagnóstica, reducción de la carga de trabajo, facilidad de uso.</li>
-<li><strong>Tip:</strong> Destaca cómo la solución de IA se integra en sus flujos de trabajo y complementa su expertise, facilitando su labor sin reemplazarlos.</li>
-<li><strong>Visualización Clave:</strong> Diagramas de flujo de trabajo, gráficos de precisión y error antes y después de la implementación.</li>
-</ul>
-</section>
-<section id="inversionistas" class="level3" data-number="9.5.3">
-<h3 data-number="9.5.3" class="anchored" data-anchor-id="inversionistas"><span class="header-section-number">9.5.3</span> Inversionistas</h3>
-<ul>
-<li><strong>Foco:</strong> Potencial de crecimiento, escalabilidad, estrategia de monetización.</li>
-<li><strong>Tip:</strong> Enfatiza la viabilidad comercial y la demanda del mercado, respaldada por datos de la industria y casos de éxito.</li>
-<li><strong>Visualización Clave:</strong> Gráficos de proyección de crecimiento, mapas de expansión de mercado, análisis de competencia.</li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="expertise-requerido-para-un-pitch-efectivo" class="level2" data-number="9.6">
-<h2 data-number="9.6" class="anchored" data-anchor-id="expertise-requerido-para-un-pitch-efectivo"><span class="header-section-number">9.6</span> <strong><em>Expertise</em> Requerido para un Pitch Efectivo</strong></h2>
-<section id="conocimiento-técnico" class="level3" data-number="9.6.1">
-<h3 data-number="9.6.1" class="anchored" data-anchor-id="conocimiento-técnico"><span class="header-section-number">9.6.1</span> Conocimiento Técnico</h3>
-<ul>
-<li><strong>Descripción:</strong> Comprender profundamente la tecnología subyacente (en este caso, la inteligencia artificial) es crucial para explicar cómo funciona y por qué es efectiva.</li>
-<li><strong>Recomendación:</strong> Involucra a los desarrolladores del proyecto para que expliquen los aspectos técnicos de la solución, respaldados por métricas y datos relevantes.</li>
-</ul>
-</section>
-<section id="comunicación-y-storytelling" class="level3" data-number="9.6.2">
-<h3 data-number="9.6.2" class="anchored" data-anchor-id="comunicación-y-storytelling"><span class="header-section-number">9.6.2</span> Comunicación y Storytelling</h3>
-<ul>
-<li><strong>Descripción:</strong> La habilidad de contar una historia convincente que conecte emocionalmente con la audiencia es clave para mantener su interés y persuadirlos.</li>
-<li><strong>Recomendación:</strong> Capacita a los presentadores en técnicas de storytelling y uso de la narrativa para asegurar que el mensaje sea claro y convincente.</li>
-</ul>
-</section>
-<section id="visualización-de-datos-1" class="level3" data-number="9.6.3">
-<h3 data-number="9.6.3" class="anchored" data-anchor-id="visualización-de-datos-1"><span class="header-section-number">9.6.3</span> Visualización de Datos</h3>
-<ul>
-<li><strong>Descripción:</strong> Presentar datos complejos de manera comprensible y atractiva requiere habilidades en herramientas de visualización y un entendimiento de cómo los datos pueden apoyar la narrativa.</li>
-<li><strong>Recomendación:</strong> Utiliza herramientas como Tableau, Power BI, o Python con librerías como Matplotlib y Seaborn para crear visualizaciones efectivas. Involucra a un analista de datos en el equipo para asegurar la calidad y precisión de las visualizaciones.</li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="ejemplo-de-pitch-para-el-proyecto-de-clasificación-de-neumonías." class="level2" data-number="9.7">
-<h2 data-number="9.7" class="anchored" data-anchor-id="ejemplo-de-pitch-para-el-proyecto-de-clasificación-de-neumonías."><span class="header-section-number">9.7</span> Ejemplo de pitch para el proyecto de clasificación de neumonías.</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Dagan2024OPTICA" class="csl-entry" role="listitem">
+Dagan, Noa, Stav Devons-Sberro, Ziv Paz, Lilach Zoller, Adir Sommer, Galit Shaham, Nir Shahar, et al. 2024. <span>“Evaluation of AI Solutions in Health Care Organizations — the OPTICA Tool.”</span> <em>NEJM AI</em> 1 (9): 1–10. <a href="https://doi.org/10.1056/AIcs2300269">https://doi.org/10.1056/AIcs2300269</a>.
+</div>
+</div>
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -790,13 +722,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./plan-neumonia.html" class="pagination-link" aria-label="Plan de Proyecto para la Clasificación de Neumonías con Inteligencia Artificial">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Plan de Proyecto para la Clasificación de Neumonías con Inteligencia Artificial</span></span>
+      <a href="./Interpretacion.html" class="pagination-link" aria-label="Visualizar la decisión del clasificador">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Visualizar la decisión del clasificador</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link" aria-label="References">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./plan-neumonia.html" class="pagination-link" aria-label="Plan de Proyecto para la Clasificación de Neumonías con Inteligencia Artificial">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Plan de Proyecto para la Clasificación de Neumonías con Inteligencia Artificial</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 book:
-  title: "Modulo 5"
+  title: "Módulos 5 y 6"
   subtitle: "Diplomado IA en Salud"
   author: "David Escudero García"
   date: "8/31/2024"
@@ -11,10 +11,13 @@ book:
     - index.qmd
     - intro.qmd
     - plan-estrategico.qmd
+    - colaboracion.qmd
+    - Clasificador.qmd
+    - Entrenamiento.qmd
+    - Interpretacion.qmd
+    - Evaluacion.qmd
     - plan-neumonia.qmd
     - presentacion.qmd
-    - colaboracion.qmd
-    - summary.qmd
     - references.qmd
 
 bibliography: references.bib

@@ -1,0 +1,64 @@
+
+# Evaluación e Implementación
+
+## ** Introducción a la herramienta OPTICA**
+
+Usaremos como ejemplo la herramienta  OPTICA para la evaluación de IA en salud [@Dagan2024OPTICA]
+
+   - **Descripción general:**  
+	 OPTICA (Organizational PerspecTIve Checklist for AI solutions adoption) es una herramienta desarrollada para evaluar soluciones de IA desde la perspectiva de organizaciones de salud. Se diseñó para abordar la creciente necesidad de marcos de evaluación prácticos, que tomen en cuenta las características únicas de cada entorno de salud.
+
+   - **Justificación de su uso:**  
+	 La rápida adopción de herramientas de IA en salud ha mostrado el potencial de mejorar la atención clínica, pero también ha revelado inconsistencias de rendimiento y la falta de adecuación de algunos modelos al ser implementados en diferentes contextos. OPTICA ofrece una evaluación específica al contexto organizacional, asegurando que cada solución esté alineada con las necesidades y recursos locales.
+
+   - **Estructura de OPTICA:**  
+	 La herramienta se organiza en 13 capítulos divididos en 4 dominios clave:
+	 1. **Especificación de la necesidad clínica**
+	 2. **Exploración de los datos**
+	 3. **Evaluación del desarrollo y desempeño**
+	 4. **Plan de despliegue y monitoreo**
+	 Cada capítulo contiene varios ítems que deben ser completados por actores específicos, asegurando un enfoque integral.
+
+
+## **Implementación del proceso de evaluación**
+   - **Elaboración del plan de evaluación:**  
+	 Para implementar OPTICA, las organizaciones deben primero designar a los actores clave que participarán en el proceso. Cada uno tendrá la responsabilidad de completar los ítems que les correspondan según su rol (ej. clínico experto, desarrollador de la solución, expertos en seguridad de datos, etc.).
+   - **Desglose de actores clave:**
+	 - **Experto clínico:** Lidera la evaluación clínica de la solución y su integración en el flujo de trabajo.
+	 - **Desarrollador de la solución:** Proporciona detalles sobre el modelo de IA, incluyendo métricas de rendimiento.
+	 - **Equipo de datos:** Evalúa la disponibilidad y compatibilidad de los datos locales.
+	 - **Experto en MLOps:** Se encarga de los aspectos técnicos del despliegue de la solución.
+	 - **Líder de IA:** Supervisa el proceso general y asegura la alineación con la estrategia organizacional.
+
+   - **Etapas del proceso de evaluación:**
+	 OPTICA organiza el proceso en 7 etapas consecutivas, desde la identificación de la necesidad clínica hasta el monitoreo posterior a la implementación. Cada etapa asegura que se aborden todos los aspectos relevantes de la solución, y permite detener el proceso si se identifica una deficiencia crítica.
+
+### **Estudio de caso**
+ El proceso de evaluación para este modelo incluirá los siguientes pasos:
+ 1. Definir la necesidad clínica: ¿Cómo mejora este modelo el proceso actual de diagnóstico de neumonía?
+	 2. Explorar los datos: ¿El conjunto de datos utilizado para entrenar el modelo es representativo de la población que será atendida en el hospital?
+	 3. Evaluar el rendimiento: ¿Cuál es la precisión, sensibilidad y especificidad del modelo? ¿Existen riesgos de sesgos hacia subpoblaciones?
+	 4. Plan de monitoreo: ¿Cómo se controlará el rendimiento del modelo una vez desplegado?
+   - **Discusión de resultados:**  
+	 Al finalizar el proceso de evaluación, analizaremos si el modelo cumple con los requisitos clínicos y técnicos establecidos. Esto incluye tanto los beneficios esperados (mejoras en la precisión del diagnóstico) como los riesgos potenciales (falta de representatividad en los datos o posibles sesgos).
+
+## **Monitoreo y evaluación continua**
+
+   - **Plan de monitoreo post-despliegue:**  
+	 Un aspecto crítico de la implementación de soluciones de IA es el monitoreo continuo. OPTICA sugiere la creación de planes específicos para reevaluar el rendimiento del modelo en función de las actualizaciones de los datos y las condiciones clínicas.
+
+   - **Indicadores clave de éxito:**  
+	 Estos indicadores deben ser definidos antes del despliegue e incluir métricas clínicas y de usabilidad. Por ejemplo, los tiempos de respuesta de los médicos, la precisión en entornos reales y la satisfacción del usuario final.
+
+### **Desafíos y consideraciones éticas**
+
+   - **Riesgos asociados con la IA en salud:**  
+	 Las soluciones de IA pueden reproducir sesgos existentes en los datos, lo que puede generar disparidades en la atención. Además, los modelos pueden fallar al ser implementados en nuevas poblaciones, generando errores diagnósticos.
+   - **Aspectos legales y de privacidad:**  
+	 Los datos clínicos son altamente sensibles y deben manejarse con rigurosos estándares de privacidad y seguridad. El cumplimiento con las normativas locales y nacionales, como la protección de datos personales, es imprescindible para cualquier solución de IA.
+
+
+#### **7. Conclusiones**
+
+La evaluación de las soluciones de IA es un proceso complejo y multidimensional. Requiere la participación de diferentes actores, la consideración de múltiples factores, y un monitoreo continuo para asegurar su éxito en la práctica clínica.
+
