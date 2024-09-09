@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -182,7 +202,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#objetivo" id="toc-objetivo" class="nav-link active" data-scroll-target="#objetivo"><span class="header-section-number">1.1</span> Objetivo</a></li>
+  <li><a href="#objetivo" id="toc-objetivo" class="nav-link active" data-scroll-target="#objetivo"><span class="header-section-number">1.1</span> Objetivo</a>
+  <ul class="collapse">
+  <li><a href="#específicos" id="toc-específicos" class="nav-link" data-scroll-target="#específicos"><span class="header-section-number">1.1.1</span> Específicos</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -231,13 +254,27 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Empoderar a los profesionales para liderar o formar parte de proyectos de IA</p></li>
 <li><p>Construcción de un lenguaje compartido</p></li>
 </ol>
+<section id="específicos" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="específicos"><span class="header-section-number">1.1.1</span> Específicos</h3>
 <p>Se ha estudiado que las redes neuronales convolucionales (CNN) pueden actuar como una “segunda opinión”, detectando patrones sutiles en imágenes médicas y mejorando la precisión diagnóstica. Este proyecto examina cómo las CNN pueden integrarse en el proceso de identificación de la neumonía, especialmente en situaciones donde la precisión es crítica.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="resources/cnn.png" class="img-fluid figure-img"></p>
+<figcaption><span class="citation" data-cites="rguibi2022cxai">Rguibi et al. (<a href="references.html#ref-rguibi2022cxai" role="doc-biblioref">2022</a>)</span></figcaption>
+</figure>
+</div>
 <p>El objetivo de este enfoque es apoyar la labor clínica diaria. Al reducir la carga cognitiva y disminuir el riesgo de errores diagnósticos, la IA puede ser una herramienta valiosa en la toma de decisiones clínicas. Utilizada adecuadamente, se convierte en un aliado, proporcionando respaldo adicional que beneficia directamente al paciente.</p>
 <p><strong>Desarrollo de un Modelo de Clasificación:</strong> En las entrañas de este proyecto se encuentra el desarrollo de un modelo de deep learning capaz de discernir entre una radiografía normal y una afectada por neumonía. Con cada imagen procesada, el sistema podría aprender, mejorar y adaptarse, buscando alcanzar un nivel de precisión aceptable.</p>
 <p><strong>Evaluación de Desempeño:</strong> Pero construir un modelo no es suficiente. Necesitamos asegurarnos de que este modelo funcione en el mundo real, donde las condiciones pueden ser mucho más caóticas que en un entorno de laboratorio. Por ello, el desempeño del sistema se evaluara utilizando métricas clave, sin embrago se tendría que comparar con la interpretación humana para asegurarnos de que sea una herramienta útil y fiable.</p>
 <p><strong>Implementación Clínica:</strong> Imagina un futuro cercano donde este modelo no sea solo un concepto en un laboratorio, sino una herramienta de uso diario en hospitales y clínicas. Aprenderemos estrategias para integrar el sistema en la práctica clínica, garantizando que sea fácil de usar y accesible para el personal médico.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-rguibi2022cxai" class="csl-entry" role="listitem">
+Rguibi, Zakaria, Abdelmajid Hajami, Dya Zitouni, Amine Elqaraoui, and Anas Bedraoui. 2022. <span>“CXAI: Explaining Convolutional Neural Networks for Medical Imaging Diagnostic.”</span> <em>Electronics</em> 11 (11): 1775. <a href="https://doi.org/10.3390/electronics11111775">https://doi.org/10.3390/electronics11111775</a>.
+</div>
+</div>
+</section>
 </section>
 
 </main> <!-- /main -->
