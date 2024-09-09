@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.554">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Módulos 5 y 6 - 1&nbsp; Introducción</title>
+<title>1&nbsp; Introducción – Módulos 5 y 6</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -78,13 +78,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -145,25 +145,25 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Interpretacion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Visualize the decision of the classifier</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Visualizar la decisión del clasificador</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Evaluacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Evaluación e Implementación</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./plan-neumonia.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Plan de Proyecto para la Clasificación de Neumonías con Inteligencia Artificial</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Plan de Proyecto para la Clasificación de Neumonías con Inteligencia Artificial</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./presentacion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Presentación del Proyecto (<em>Pitch</em>)</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Presentación del Proyecto (<em>Pitch</em>)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -182,7 +182,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#objetivos-del-proyecto" id="toc-objetivos-del-proyecto" class="nav-link active" data-scroll-target="#objetivos-del-proyecto"><span class="header-section-number">1.1</span> Objetivos del Proyecto</a></li>
+  <li><a href="#objetivo" id="toc-objetivo" class="nav-link active" data-scroll-target="#objetivo"><span class="header-section-number">1.1</span> Objetivo</a></li>
   </ul>
 </nav>
     </div>
@@ -208,17 +208,34 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>La inteligencia artificial (IA) ha pasado de ser una mera curiosidad tecnológica a convertirse en un pilar fundamental en diversos sectores, incluyendo la medicina.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="resources/Crecimiento PubMed.gif" class="img-fluid figure-img"></p>
+<figcaption>Query: “Artificial Intelligence”</figcaption>
+</figure>
+</div>
 <blockquote class="blockquote">
 <p><em>IBM debería dejar de intentar curar el cáncer. Liberaron el motor de marketing sin controlar cómo construir y desarrollar un producto.</em> Peter Greulich</p>
 </blockquote>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="resources/Dennis Kung Watson.jpeg" class="img-fluid figure-img"></p>
+<figcaption>2016 Watson at Work</figcaption>
+</figure>
+</div>
+<section id="objetivo" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="objetivo"><span class="header-section-number">1.1</span> Objetivo</h2>
+<ol type="1">
+<li><p>Desmitificar la IA</p></li>
+<li><p>Empoderar a los profesionales para liderar o formar parte de proyectos de IA</p></li>
+<li><p>Construcción de un lenguaje compartido</p></li>
+</ol>
 <p>Se ha estudiado que las redes neuronales convolucionales (CNN) pueden actuar como una “segunda opinión”, detectando patrones sutiles en imágenes médicas y mejorando la precisión diagnóstica. Este proyecto examina cómo las CNN pueden integrarse en el proceso de identificación de la neumonía, especialmente en situaciones donde la precisión es crítica.</p>
 <p>El objetivo de este enfoque es apoyar la labor clínica diaria. Al reducir la carga cognitiva y disminuir el riesgo de errores diagnósticos, la IA puede ser una herramienta valiosa en la toma de decisiones clínicas. Utilizada adecuadamente, se convierte en un aliado, proporcionando respaldo adicional que beneficia directamente al paciente.</p>
-<section id="objetivos-del-proyecto" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="objetivos-del-proyecto"><span class="header-section-number">1.1</span> Objetivos del Proyecto</h2>
 <p><strong>Desarrollo de un Modelo de Clasificación:</strong> En las entrañas de este proyecto se encuentra el desarrollo de un modelo de deep learning capaz de discernir entre una radiografía normal y una afectada por neumonía. Con cada imagen procesada, el sistema podría aprender, mejorar y adaptarse, buscando alcanzar un nivel de precisión aceptable.</p>
 <p><strong>Evaluación de Desempeño:</strong> Pero construir un modelo no es suficiente. Necesitamos asegurarnos de que este modelo funcione en el mundo real, donde las condiciones pueden ser mucho más caóticas que en un entorno de laboratorio. Por ello, el desempeño del sistema se evaluara utilizando métricas clave, sin embrago se tendría que comparar con la interpretación humana para asegurarnos de que sea una herramienta útil y fiable.</p>
 <p><strong>Implementación Clínica:</strong> Imagina un futuro cercano donde este modelo no sea solo un concepto en un laboratorio, sino una herramienta de uso diario en hospitales y clínicas. Aprenderemos estrategias para integrar el sistema en la práctica clínica, garantizando que sea fácil de usar y accesible para el personal médico.</p>
-<p>En la radiología, la IA está comenzando a desempeñar un papel crucial, ayudando a los médicos a detectar anomalías con mayor precisión y a reducir la posibilidad de errores humanos.</p>
 
 
 </section>
@@ -259,18 +276,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -302,7 +308,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -310,7 +338,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {

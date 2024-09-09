@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.554">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Módulos 5 y 6 - 2&nbsp; Planteamiento Estratégico</title>
+<title>2&nbsp; Planteamiento Estratégico – Módulos 5 y 6</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -78,13 +98,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./plan-estrategico.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Planteamiento Estratégico</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -145,25 +165,25 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Interpretacion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Visualize the decision of the classifier</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Visualizar la decisión del clasificador</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Evaluacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Evaluación e Implementación</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./plan-neumonia.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Plan de Proyecto para la Clasificación de Neumonías con Inteligencia Artificial</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Plan de Proyecto para la Clasificación de Neumonías con Inteligencia Artificial</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./presentacion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Presentación del Proyecto (<em>Pitch</em>)</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Presentación del Proyecto (<em>Pitch</em>)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -216,6 +236,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p><img src="resources/AI en salud Stanford.jpg" class="img-fluid"></p>
 <section id="estrategia-para-ia-vs.-estrategia-con-ia" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="estrategia-para-ia-vs.-estrategia-con-ia"><span class="header-section-number">2.1</span> Estrategia para IA vs.&nbsp;Estrategia con IA</h2>
 <p>Estrategia <strong>para</strong> IA: Preparación de una organización para implementar la IA. - Inversión en tecnologías de IA - Capacitación del personal - Adquisición de datos - Diseño de procesos que permitan a la IA integrarse en el flujo de trabajo.</p>
@@ -235,10 +256,17 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Relación entre estrategia de IA y estrategia de datos</strong>: Una estrategia de IA efectiva depende directamente de una estrategia sólida para los datos. La calidad, cantidad y velocidad de los datos son fundamentales para entrenar modelos de IA de manera adecuada.</li>
 <li><strong>Gobernanza de datos</strong>: Los hospitales y sistemas de salud deben invertir en una buena gobernanza de datos. Esto significa asegurarse de que los datos sean precisos, completos y se gestionen adecuadamente para su uso en mejorar la atención médica.</li>
 </ol>
+<p><span class="citation" data-cites="kiron_schrage_2019">Kiron and Schrage (<a href="references.html#ref-kiron_schrage_2019" role="doc-biblioref">2019</a>)</span></p>
 </section>
 </section>
 <section id="planeación-de-un-proyecto-de-ia" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="planeación-de-un-proyecto-de-ia"><span class="header-section-number">2.2</span> Planeación de un proyecto de IA</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="resources/planning.png" class="img-fluid figure-img"></p>
+<figcaption>Diagrama adaptado de <span class="citation" data-cites="bajwa2021ai">Bajwa et al. (<a href="references.html#ref-bajwa2021ai" role="doc-biblioref">2021</a>)</span></figcaption>
+</figure>
+</div>
 <p><strong>¿Cómo inicio?</strong></p>
 <p>Para comenzar a planear un proyecto de inteligencia artificial, podemos seguir un enfoque basado en las cuatro fases fundamentales delineadas por Gartner:</p>
 <ol type="1">
@@ -267,9 +295,20 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>Prototipar</strong>: Desarrollar prototipos rápidos que puedan ser probados en entornos reales o simulados. Esto permite iterar rápidamente y mejorar las soluciones antes de su implementación a gran escala.</p></li>
 <li><p><strong>Evaluar</strong>: Poner a prueba el prototipo con usuarios reales y obtener retroalimentación para afinar el proyecto. En el contexto de IA, esto podría implicar probar un modelo en un entorno clínico para asegurar que las recomendaciones sean útiles y precisas.</p></li>
 </ol>
-<p>Este enfoque de <strong>Design Thinking</strong> asegura que el proyecto de IA no solo esté alineado con los objetivos técnicos y organizacionales, sino también con las necesidades y expectativas de quienes interactúan con la solución, ya sean pacientes o profesionales de la salud.</p>
+<p>Este enfoque de <span class="citation" data-cites="ku_lupton_2022">Ku and Lupton (<a href="references.html#ref-ku_lupton_2022" role="doc-biblioref">2022</a>)</span> asegura que el proyecto de IA no solo esté alineado con los objetivos técnicos y organizacionales, sino también con las necesidades y expectativas de quienes interactúan con la solución, ya sean pacientes o profesionales de la salud.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-bajwa2021ai" class="csl-entry" role="listitem">
+Bajwa, Junaid, Usman Munir, Aditya Nori, and Bryan Williams. 2021. <span>“Artificial Intelligence in Healthcare: Transforming the Practice of Medicine.”</span> <em>Future Healthcare Journal</em> 8 (2): e188–94. <a href="https://doi.org/10.7861/fhj.2021-0095">https://doi.org/10.7861/fhj.2021-0095</a>.
+</div>
+<div id="ref-kiron_schrage_2019" class="csl-entry" role="listitem">
+Kiron, David, and Michael Schrage. 2019. <span>“Strategy for and with AI.”</span> <em>MIT Sloan Management Review</em>. <a href="https://sloanreview.mit.edu/article/strategy-for-and-with-ai/">https://sloanreview.mit.edu/article/strategy-for-and-with-ai/</a>.
+</div>
+<div id="ref-ku_lupton_2022" class="csl-entry" role="listitem">
+Ku, Bon, and Ellen Lupton. 2022. <em>Health Design Thinking: Creating Products and Services for Better Health</em>. Expanded. MIT Press. <a href="https://www.shopatmatter.com/product/health-design-thinking/">https://www.shopatmatter.com/product/health-design-thinking/</a>.
+</div>
+</div>
 </section>
 </section>
 
@@ -309,18 +348,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -352,7 +380,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -360,7 +410,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
