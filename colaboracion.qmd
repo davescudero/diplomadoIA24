@@ -1,6 +1,8 @@
 # Colaboración Interdisciplinaria en Proyectos de IA
 
-Un proyecto de inteligencia artificial, como el desarrollo de software basado en machine learning, involucra múltiples fases que requieren la colaboración de diferentes perfiles con habilidades diversas. Para que un proyecto de IA tenga éxito, es necesario que varios equipos trabajen juntos, cada uno aportando su experiencia a las diferentes etapas del flujo de trabajo. 
+Un proyecto de inteligencia artificial, como el desarrollo de software basado en machine learning, involucra múltiples fases que requieren la colaboración de diferentes perfiles con habilidades diversas. Para que un proyecto de IA tenga éxito, es necesario que varios equipos trabajen juntos, cada uno aportando su experiencia a las diferentes etapas del flujo de trabajo.
+
+![](resources/MLWorkflow.jpg)
 
 ## El Reto de la Colaboración
 
