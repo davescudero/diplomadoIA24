@@ -301,6 +301,42 @@ Creamos una cuadrícula 3 x 3 para visualizar 9 imágenes. Esta técnica de visu
 
 ### Preprocesamiento de Imagenes
 
+```{python}
+#| echo: false
+import pydicom
+import matplotlib.pyplot as plt
+
+# Ruta del archivo DICOM
+dicom_file = 'resources/0000a175-0e68-4ca4-b1af-167204a7e0bc.dcm'
+
+# Leer el archivo DICOM
+dicom_data = pydicom.dcmread(dicom_file)
+
+# Mostrar metadata del archivo DICOM
+print("Metadata del archivo DICOM:")
+print(dicom_data)
+
+# Mostrar algunas características clave del archivo DICOM
+print("\nCaracterísticas de información del archivo DICOM:")
+print(f"Paciente: {dicom_data.PatientName}")
+print(f"ID del Paciente: {dicom_data.PatientID}")
+print(f"Modalidad: {dicom_data.Modality}")
+print(f"Fecha del estudio: {dicom_data.StudyDate}")
+print(f"Tamaño de la imagen: {dicom_data.Rows} x {dicom_data.Columns}")
+print(f"Número de fotogramas: {dicom_data.NumberOfFrames if 'NumberOfFrames' in dicom_data else 1}")
+print(f"Profundidad de bits: {dicom_data.BitsAllocated} bits")
+
+# Obtener la imagen DICOM en formato NumPy
+image = dicom_data.pixel_array
+
+# Visualizar la imagen usando matplotlib
+plt.imshow(image, cmap='gray')
+plt.title(f"Imagen DICOM - {dicom_data.Modality}")
+plt.axis('off')  # Ocultar los ejes
+plt.show()
+```
+
+
 Para manejar eficientemente nuestros datos , convertimos las imágenes de rayos X almacenadas en formato DICOM a matrices.
 
 Posteriormente, calculamos la media y la desviación estándar general de los píxeles de todo el conjunto de datos con el propósito de normalización.
