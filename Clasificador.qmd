@@ -1,7 +1,42 @@
 # Clasificador de Neumonias con Deep Learning
 
 ## Introducción
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VKnoyiNxflk?si=hK9eoiAQmdRWD-pJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+::: {.panel}
+<div style="position: relative; width: 100%; height: 0; padding-top: 250.0000%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https://www.canva.com/design/DAGQmio9YL8/dd-yo38tdXanFZMRseWBrA/watch?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https://www.canva.com/design/DAGQmio9YL8/dd-yo38tdXanFZMRseWBrA/watch?utm_content=DAGQmio9YL8&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">1936</a> de David Escudero
+:::
+
+Gran parte del impulso actual en inteligencia artificial (IA), está estrechamente vinculado al éxito de las redes neuronales profundas (*DNN*). La era de las *DNN* no habría emergido sin la confluencia de cuatro factores clave.
+
+1. El primero es la disponibilidad de grandes conjuntos de datos, o *big data*, esenciales para entrenar estos modelos. 
+
+2. El segundo factor son las unidades de procesamiento gráfico (*GPU*), originalmente diseñadas para videojuegos, que permiten ejecutar cálculos intensivos mediante arquitecturas paralelas masivas.
+
+3. El tercer componente es la computación en la nube, que ofrece almacenamiento y procesamiento de enormes cantidades de datos de manera económica y eficiente.
+
+4. Finalmente, el cuarto factor son las bibliotecas de código abierto para el desarrollo de algoritmos, como TensorFlow de Google, Cognitive Toolkit de Microsoft, Caffe de UC Berkeley, PyTorch de Facebook, y Paddle de Baidu.
+
+Una *DNN* se puede visualizar como un sándwich de múltiples capas, pero en lugar de ingredientes estáticos, los datos fluyen a través de una serie de cálculos que extraen características de alto nivel a partir de datos sensoriales en bruto. Lo notable es que las capas de estas redes no son diseñadas explícitamente por humanos; más bien, se ajustan mediante técnicas como la retropropagación.
+
+ImageNet ejemplifica un adagio sobre la IA: los conjuntos de datos—no los algoritmos—podrían ser el factor limitante clave para alcanzar una inteligencia artificial a nivel humano.
+
+> "Considero que los datos de píxeles en imágenes y videos son la materia oscura de Internet." Fej LI
+
+Muchos diferentes *DNNs* convolucionales se utilizaron para clasificar las imágenes en los concursos anuales del *ImageNet Challenge* para reconocer a los mejores (como AlexNet, GoogleNet, VGG Net y ResNet).
+
+
+::: {.panel}
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.25%; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/40riCqvRoMs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen></iframe>
+</div>
+:::
+
+
 
 ## Vision por Computadora
 ### Filtros
@@ -168,6 +203,8 @@ plt.show()
 
 ```
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VKnoyiNxflk?si=hK9eoiAQmdRWD-pJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 [CNN visualizer](https://poloclub.github.io/cnn-explainer/)
 
