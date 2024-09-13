@@ -16,6 +16,7 @@ book:
     - Entrenamiento.qmd
     - Interpretacion.qmd
     - Evaluacion.qmd
+    - sesgos.qmd
     - plan-neumonia.qmd
     - presentacion.qmd
     - references.qmd
